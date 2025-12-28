@@ -1,15 +1,15 @@
-# How to setup virtual machines
+# seting up virtual machines on Mac
 
-This is a guide on how to setup Virtual machines on Apple silicon Mac using UTM software to run Kali Linux. I created this guide to help others on some errors I ran into while setting up my VM.
+This guide lays out how I setup Virtual machines on Apple silicon Mac using UTM software to run Kali Linux. I created this guide to help others bypass the errors I encountered while setting up VMs on Mac.
 
 ### Specifications:
 **Recommended specs (at time of writing):**  
     **MacOS:** Tahoe 26.1  
-    **UTM version:**  
-    Kali Linux version:  
-    Storage Available:  
-    Memory:  
-    CPU Cores:
+    **UTM version:** 4.7.4  
+    **Kali Linux version:**  kali-linux-2025.4
+    **Storage Required:**  64 GB for best results (40 GB minimum)
+    **Memory:**  6 GB for best results (4 GB minimum)
+    **CPU Cores:** 4 for best results
 
 ### Software Links:
 **Links are directed to the download pages. Make sure to download the latest version for your device.**  
