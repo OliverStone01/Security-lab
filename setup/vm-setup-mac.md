@@ -31,9 +31,10 @@ This guide lays out how I setup Virtual machines on Apple silicon Mac using UTM 
 
 ### Setting up the virtual machine
 9. Open the UTM application.
-10. Click **Create a New Virtual Machine**.
-![Screenshot of UTM start up page]()
+<img alt="Screenshot of UTM welcome page" src="welcome-UTM.png" width=400px>
 
+10. Click **Create a New Virtual Machine**
+    
 > **Virtualisation VS emulation**
 >
 > - **Vitualisation** runs software directly on your CPU using the same architecture (ARM -> ARM)  
