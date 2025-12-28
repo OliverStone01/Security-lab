@@ -31,7 +31,7 @@ This guide lays out how I setup Virtual machines on Apple silicon Mac using UTM 
 
 ### Setting up the virtual machine
 9. Open the UTM application.
-<img alt="Screenshot of UTM welcome page" src="welcome-UTM.png" width=400px>
+<img alt="Screenshot of UTM welcome page" src="images/welcome-UTM.png" width=400px>
 
 10. Click **Create a New Virtual Machine**
     
@@ -40,22 +40,22 @@ This guide lays out how I setup Virtual machines on Apple silicon Mac using UTM 
 > - **Vitualisation** runs software directly on your CPU using the same architecture (ARM -> ARM)  
 > - **Emulation** translates every instruction pretending to be a diffrent CPU architecture (x86 -> ARM)  
 >
-> Virtualisation is much quicker and has better stability. Because this machine is being setup to be a bug bounty/penetration testing tool, I'm going to use virtualisation for better speeds and so I can use tools like Metasploit and Burp suit.
+> Virtualisation is much quicker and is more stable compared to emulation.
 
-11. Click on **Virtualise**
-12. Choose **Linux** from the Operating System list
+11. Click on **Virtualise**.  
+12. Choose **Linux** from the list of Operating Systems.  
 
 > **Memory allocation**
-> - **Bare Minimum: 2 GB (2048 MiB):** Boots but usability is limited  
-> - **Recommended Minimum: 4 GB (4096 MiB):** Recommended default  
-> - **Recommended: 8 GB (8192 MiB):** Recommended for good performance
+> - **Bare Minimum: 2 GB (2048 MiB):** Boots but usability is limited.  
+> - **Recommended Minimum: 4 GB (4096 MiB):** Recommended default.    
+> - **Recommended: 8 GB (8192 MiB):** Recommended for good performance.  
 
 > **CPU Core allocation**
 > - **Bare Minimum:**
 > - **Recommended Minimum:**
-> - **Recommended:**
+> - **Recommended:** 4 cores.  
 
-13. I'm going to be using 8GB of memory and 4 CPU cores
+13. Set your memory and CPU core allocation as you see fit.
 14. Leave **Display Output** as default:  
     ✅ Enable display output  
     ☑️ Enable hardware OpenGL acceleration
