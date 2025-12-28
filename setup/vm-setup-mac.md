@@ -18,20 +18,21 @@ This guide lays out how I setup Virtual machines on Apple silicon Mac using UTM 
 
 
 ### Downloading UTM for Mac
-1. Go to UTM downloader via your browser or via this [link](https://mac.getutm.app)
+1. Go to UTM downloader via your browser or via this [link](https://mac.getutm.app).
 2. Open the downloaded launcher and follow steps to move UTM to the application folder.
 3. You do not need to open UTM until you have downloaded the Kali linux OS in the next stage.
 
 ### Download latest Kali Linux .iso file
-4. Go to the Kali Linux OS installer via your browser or using this [link](https://www.kali.org/get-kali/#kali-installer-images)
-5. Click on **Installer images**
-6. Change processor to **Apple Silicon (ARM64)**
-7. Click on download under **Installer**
-8. **DO NOT OPEN** the ISO file once it's downloaded
+4. Go to the Kali Linux OS installer via your browser or via this [link](https://www.kali.org/get-kali/#kali-installer-images).
+5. Click on **Installer images**.
+6. Change processor to **Apple Silicon (ARM64)**.
+7. Click on download under **Installer**.
+8. **DO NOT OPEN** the ISO file once it's downloaded.
 
 ### Setting up the virtual machine
-9. Open the UTM application
-10. Click on **Create a New Virtual Machine**
+9. Open the UTM application.
+10. Click **Create a New Virtual Machine**.
+![Screenshot of UTM start up page]()
 
 > **Virtualisation VS emulation**
 >
