@@ -114,5 +114,13 @@ Using the Terminal, follow the following setup steps.
 
 > This install will take around 10 minuets.
 
+44. Once the install is complete, select **continue** and the system will reboot.
+45. When you see the installer menu again, close and stop the VM.
+46. Select your VM from the list on the UTM application.
+47. At the bottom of the information pannel on the right, click the drop down for **CD/DVD**.
+48. Click **Clear** to clear the .iso file.
+<img alt="clearing the .iso file" src="images/clear-iso-file.png" width=100px>
 
+### First boot
+After clearing the .iso file, 
 
