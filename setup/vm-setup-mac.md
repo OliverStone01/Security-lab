@@ -87,6 +87,7 @@ Download the latest version of software for your device.
     - Click **New...**
     - Click **Serial**
     - Then Save
+    <img alt="Serial settings" src="Images/terminal-settings.png" width=100px>
 
 24. Boot the VM (2 windows will apear, the GUI and the terminal)
 
