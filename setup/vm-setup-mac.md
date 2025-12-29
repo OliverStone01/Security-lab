@@ -82,5 +82,10 @@ This guide lays out how I setup Virtual machines on Apple silicon Mac using UTM 
 > To fix this, we can make the terminal appear on boot to then complete the setup steps.
 
 22. Right click on the VM and click **edit**.
-23. 
+23. Under **Devices**
+    - Click **New...**
+    - Click **Serial**
+    - Then Save
+
+
 
