@@ -75,5 +75,5 @@ This guide lays out how I setup Virtual machines on Apple silicon Mac using UTM 
 19. Change the name to what anything you want to call the VM.
 21. Save the VM.
 
-> An issue I kept running into at this point was when I booted the VM, I would get a flashing dash:
-<img >
+> An issue I kept running into at this point was when I booted the VM, I would get a flashing underscore:
+<img alt="Flashing underscore error" src="images/Flashing-underscore.png" width=200px>
