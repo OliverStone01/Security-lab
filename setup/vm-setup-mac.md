@@ -82,55 +82,61 @@ Download the latest version of software for your device.
 >
 > To fix this, we can make the terminal appear on boot to then complete the setup steps.
 
-22. Right click on the VM and click **edit**.
-23. Under **Devices**
-    - Click **New...**
-    - Click **Serial**
-    - Then Save
-    <img alt="Serial settings" src="Images/terminal-settings.png" width=100px>
+22. Right click on the VM and click `edit`.
+23. Under `Devices`:
+    - Click `New...`.
+    - Click `Serial`.
+    - Then Save.
 
-24. Boot the VM (2 windows will apear, the GUI and the terminal)
+<img alt="Serial settings" src="images/terminal-settings.png" width=100px>
+
+24. Boot the VM (2 windows will apear, the **GUI** and the **terminal**).
 
 ### Kali Linux setup
 Using the Terminal, follow the following setup steps.
 
-25. Press enter on **Install**
-26. Press enter on **English**
-27. Press enter on your location
-28. Press enter on the keymap (keyboard layout) you want to use.
-29. The instal will then begin.
-30. Wait for the installer to complete network setup.
-31. Enter a **hostname**
-32. Enter a **Domain name**
-33. Enter a name for the user
-34. Enter a **username**
-35. Enter a **new password**
-36. Re-enter the password
-37. Wait for the installer to complete.
-38. Select **Guided - Use entire disk**
-39. Select **Virtual disk 1 (vda)**
-40. Select **All files in one partition**
-41. Select **Finish partioning and write changes to disk**
-42. Select **Yes** to write the changes to disk
-43. Select **Continue** to install packages and other software
+25. Press **enter** on `Install`.
+26. Press **enter** on `English`.
+27. Press **enter** on your location.
+28. Press **enter** on the keymap (keyboard layout) you want to use.
+
+> The install will then begin...
+
+29. Enter a `hostname`.
+30. Enter a `Domain name`.
+31. Enter a `name` for the user.
+32. Enter a `username`.
+33. Enter a `new password`.
+34. Re-enter the password.
+
+> Wait for the install to complete...
+
+35. Select `Guided - Use entire disk`.
+36. Select `Virtual disk 1 (vda)`.
+37. Select `All files in one partition`.
+38. Select `Finish partioning and write changes to disk`.
+39. Select `Yes` to write the changes to disk.
+40. Select `Continue` to install packages and other software.
 
 > This install will take around 10 minuets.
 
-44. Once the install is complete, select **continue** and the system will reboot.
-45. When you see the installer menu again, close and stop the VM.
-46. Select your VM from the list on the UTM application.
-47. At the bottom of the information pannel on the right, click the drop down for **CD/DVD**.
-48. Click **Clear** to clear the .iso file.
+41. Once the install is complete, select `continue` and the system will reboot.
+42. When you see the installer menu again, close and stop the VM.
+43. Select your VM from the list on the **UTM application**.
+44. At the bottom of the information pannel on the right, click the drop down for `CD/DVD`.
+45. Click `Clear` to clear the .iso file.
 <img alt="clearing the .iso file" src="images/clear-iso-file.png" width=100px>
 
 ### First boot
-49. After clearing the .iso file, boot the VM and login with the credentials you created earlier.
-50. Open a terminal and run:
+46. After clearing the .iso file, boot the VM and login with the credentials you created earlier.
+47. Open a terminal and run:
 ```
 sudo apt get update
 ```
-51. Once the update is complete, run:
+48. Once the update is complete, run:
 ```
 sudo apt get upgrade
 ```
+
+You now have succefully setup a virtual machine running Kali linux on Mac.
 
