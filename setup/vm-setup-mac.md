@@ -122,5 +122,13 @@ Using the Terminal, follow the following setup steps.
 <img alt="clearing the .iso file" src="images/clear-iso-file.png" width=100px>
 
 ### First boot
-After clearing the .iso file, 
+49. After clearing the .iso file, boot the VM and login with the credentials you created earlier.
+50. Open a terminal and run:
+```
+sudo apt get update
+```
+51. Once the update is complete, run:
+```
+sudo apt get upgrade
+```
 
