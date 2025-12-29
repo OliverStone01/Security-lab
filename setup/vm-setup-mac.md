@@ -77,3 +77,10 @@ This guide lays out how I setup Virtual machines on Apple silicon Mac using UTM 
 
 > An issue I kept running into at this point was when I booted the VM, I would get a flashing underscore:
 <img alt="Flashing underscore error" src="images/Flashing-underscore.png" width=200px>
+> After doing some investigating, it turns out some Linux installers default to **serial output (terminal)** which is why the graphical display doesnt display anything.
+>
+> To fix this, we can make the terminal appear on boot to then complete the setup steps.
+
+22. Right click on the VM and click **edit**.
+23. 
+
