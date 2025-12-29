@@ -73,12 +73,7 @@ This guide lays out how I setup Virtual machines on Apple silicon Mac using UTM 
 
 18. Set your directory location by using **Browse..**. Set a location that is convinient to access. For example, your Desktop.
 19. Change the name to what anything you want to call the VM.
-20. Make sure to tick **Open VM settings**:
-<img alt="Summary" src="images/summary.png" width=200px>
+21. Save the VM.
 
-21. Save the VM (This will open the VM settings).
-
-### Adjusting settings
-22. Under **Device**:
-    - Change **Emulated Display Card** to **virtio-ramfb**.
-    
+> An issue I kept running into at this point was when I booted the VM, I would get a flashing dash:
+<img >
