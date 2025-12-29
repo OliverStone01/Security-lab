@@ -87,5 +87,32 @@ This guide lays out how I setup Virtual machines on Apple silicon Mac using UTM 
     - Click **Serial**
     - Then Save
 
+24. Boot the VM (2 windows will apear, the GUI and the terminal)
+
+### Kali Linux setup
+Using the Terminal, follow the following setup steps.
+
+25. Press enter on **Install**
+26. Press enter on **English**
+27. Press enter on your location
+28. Press enter on the keymap (keyboard layout) you want to use.
+29. The instal will then begin.
+30. Wait for the installer to complete network setup.
+31. Enter a **hostname**
+32. Enter a **Domain name**
+33. Enter a name for the user
+34. Enter a **username**
+35. Enter a **new password**
+36. Re-enter the password
+37. Wait for the installer to complete.
+38. Select **Guided - Use entire disk**
+39. Select **Virtual disk 1 (vda)**
+40. Select **All files in one partition**
+41. Select **Finish partioning and write changes to disk**
+42. Select **Yes** to write the changes to disk
+43. Select **Continue** to install packages and other software
+
+> This install will take around 10 minuets.
+
 
 
