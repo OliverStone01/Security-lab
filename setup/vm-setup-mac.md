@@ -46,32 +46,39 @@ This guide lays out how I setup Virtual machines on Apple silicon Mac using UTM 
 12. Choose **Linux** from the list of Operating Systems.  
 
 > **Memory allocation**
-> - **Bare Minimum: 2 GB (2048 MiB):** Boots but usability is limited.  
-> - **Recommended Minimum: 4 GB (4096 MiB):** Recommended default.    
-> - **Recommended: 8 GB (8192 MiB):** Recommended for good performance.  
+> - **Bare Minimum: 2 GB (2048 MiB)** Boots but usability is limited.  
+> - **Recommended Minimum: 4 GB (4096 MiB)** Recommended default.    
+> - **Recommended: 8 GB (8192 MiB)** Recommended for good performance.  
 
 > **CPU Core allocation**
-> - **Bare Minimum:**
-> - **Recommended Minimum:**
-> - **Recommended:** 4 cores.  
+> - **Bare Minimum: 2 cores** suitable for basic tasks.
+> - **Recommended Minimum: 3 cores** smoother performance
+> - **Recommended:** suitable for running multiple tasks without noticable lag.
 
-13. Set your memory and CPU core allocation as you see fit.
+13. Set your memory and CPU core allocation as needed.
 14. Leave **Display Output** as default:  
-    ✅ Enable display output  
-    ☑️ Enable hardware OpenGL acceleration
+<img alt="Display settings on UTM" src="images/Hardware-settings.png" width=400px>
 
 15. Set **Boot Image Type** to **Boot from ISO image**
-16. Under **Path** use the **Browse...** option and select the kali linux .iso file you downloaded earlier
+16. Under **Path** use the **Browse...** option and select the kali linux .iso file you downloaded earlier.  
 
 > **Storage**
-> - **Bare Minimum:**
-> - **Recommended Minimum:**
-> - **Recommended:**
+> - **Bare Minimum:** 40GB
+> - **Recommended Minimum:** 64GB
+> - **Recommended:** 80-100GB
 
-17. I'm going to be using 64GB of storage
+17. Set your storage allocation as needed.
 
-> Your shared directory will allow you to transfer files between your virtual machine and your main machine.
+> **Shared directory** allows you to transfer files between the virtual machine and the main machine.
 
-18. Set your directory location by using **Browse..** and set it to anywhere you find convinient to access. For example, your desktop.
-19. Change the name to whatever you wish and save.
-20. 
+18. Set your directory location by using **Browse..**. Set a location that is convinient to access. For example, your Desktop.
+19. Change the name to what anything you want to call the VM.
+20. Make sure to tick **Open VM settings**:
+<img alt="Summary" src="images/summary.png" width=200px>
+
+21. Save the VM (This will open the VM settings).
+
+### Adjusting settings
+22. Under **Device**:
+    - Change **Emulated Display Card** to **virtio-ramfb**.
+    
