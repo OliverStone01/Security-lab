@@ -2,6 +2,8 @@
 
 This guide lays out how I set up Virtual machines on an **Apple Silicon M4 Mac** using **UTM** software to run **Kali Linux**. I created this guide to help other beginners, CTF players, and security students who want a reliable Kali Linux virtual machine while bypassing and understanding common errors that occur during setup.
 
+-----
+
 ### Recommended specs (at time of writing):  
     
 **MacOS:** Tahoe 26.1  
@@ -11,11 +13,14 @@ This guide lays out how I set up Virtual machines on an **Apple Silicon M4 Mac**
 **Memory:**  6 GB for best results (4 GB minimum).  
 **CPU Cores:** 4 for best results. (2 cores minimum)
 
+-----
+
 ### Software Links:
 Download the latest version of software for your device.  
     [UTM Downloader for Mac](https://mac.getutm.app)  
     [Kali Linux .iso boot file](https://www.kali.org/get-kali/#kali-installer-images)  
 
+-----
 
 ### Downloading UTM for Mac
 1. Go to **UTM downloader** via your browser or via this [link](https://mac.getutm.app).
@@ -127,6 +132,8 @@ Using the Terminal, follow the following setup steps.
 45. Click `Clear` to clear the .iso file.
 <img alt="clearing the .iso file" src="images/clear-iso-file.png" width=300px>
 
+-----
+
 ### First boot
 46. After clearing the .iso file, boot the VM and login with the credentials you created earlier.
 47. Open a terminal and run:
@@ -139,6 +146,8 @@ sudo apt upgrade
 ```
 
 You now have successfully setup a virtual machine running Kali linux on Mac.
+
+-----
 
 ### Closing your virtual machine
 When closing the virtual machine, it is important to close down the machine first before terminating the machine via UTM. If you fail to shut down the virtual machine first, your data may not be written to disk and may be lost.
@@ -153,7 +162,7 @@ shutdown now
 poweroff
 ```
 
-- Via GUI
+- Via GUI  
     **Method 1**
     - Click on `menu` in the top left of the toolbar.
     - Click `Logout` in the bottom right of the menu.
