@@ -1,6 +1,6 @@
 # Setting up virtual machines on Mac
 
-This guide lays out how I setup Virtual machines on Apple silicon Mac using UTM software to run Kali Linux. I created this guide to help others bypass the errors I encountered while setting up VMs on Mac.
+This guide lays out how I set up Virtual machines on an **Apple Silicon M4 Mac** using **UTM** software to run **Kali Linux**. I created this guide to help other beginners, CTF players, and security students who want a reliable Kali Linux virtual machine while bypassing and understanding common errors that occur during setup.
 
 ### Recommended specs (at time of writing):  
     
@@ -53,7 +53,7 @@ Download the latest version of software for your device.
 > **CPU Core allocation**
 > - **Bare Minimum: 2 cores** suitable for basic tasks.
 > - **Recommended Minimum: 3 cores** smoother performance.
-> - **Recommended:** suitable for running multiple tasks without noticeable lag.
+> - **Recommended: 4 cores** suitable for running multiple tasks without noticeable lag.
 
 13. Set your memory and CPU core allocation as needed.
 14. Leave `Display Output` as default:  
@@ -78,7 +78,7 @@ Download the latest version of software for your device.
 > An issue I kept running into at this point was when I booted the VM, I would get a flashing underscore:
 <img alt="Flashing underscore error" src="images/Flashing-underscore.png" width=300px>
 
-> After doing some investigating, I found out some Linux installers default to **serial output (terminal)** which is why the graphical display doesn't display anything.
+> After doing some investigating, I found out some Linux installers default to **serial output (terminal)** on ARM systems to avoid graphical driver issues which is why the GUI display doesn't display anything.
 >
 > To fix this, we can make the terminal appear on boot to then complete the setup steps.
 
@@ -131,11 +131,11 @@ Using the Terminal, follow the following setup steps.
 46. After clearing the .iso file, boot the VM and login with the credentials you created earlier.
 47. Open a terminal and run:
 ```
-sudo apt get update
+sudo apt update
 ```
 48. Once the update is complete, run:
 ```
-sudo apt get upgrade
+sudo apt upgrade
 ```
 
 You now have successfully setup a virtual machine running Kali linux on Mac.
