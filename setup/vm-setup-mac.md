@@ -1,4 +1,4 @@
-# Seting up virtual machines on Mac
+# Setting up virtual machines on Mac
 
 This guide lays out how I setup Virtual machines on Apple silicon Mac using UTM software to run Kali Linux. I created this guide to help others bypass the errors I encountered while setting up VMs on Mac.
 
@@ -37,8 +37,8 @@ Download the latest version of software for your device.
     
 > **Virtualisation VS emulation**
 >
-> - **Vitualisation** runs software directly on your CPU using the same architecture (ARM -> ARM)  
-> - **Emulation** translates every instruction pretending to be a diffrent CPU architecture (x86 -> ARM)  
+> - **Virtualisation** runs software directly on your CPU using the same architecture (ARM -> ARM)  
+> - **Emulation** translates every instruction pretending to be a different CPU architecture (x86 -> ARM)  
 >
 > Virtualisation is much quicker and is more stable compared to emulation.
 
@@ -71,14 +71,14 @@ Download the latest version of software for your device.
 
 > A **Shared directory** allows you to share files between the virtual machine and the main machine.
 
-18. Set your shared directory location by using `Browse..`. Make sure to set a location that is convinient to access. For example, your Desktop.
+18. Set your shared directory location by using `Browse..`. Make sure to set a location that is convenient to access. For example, your Desktop.
 19. Change the name to whatever you want to call the virtual machine.
 21. Save the virtual machine.
 
 > An issue I kept running into at this point was when I booted the VM, I would get a flashing underscore:
 <img alt="Flashing underscore error" src="images/Flashing-underscore.png" width=300px>
 
-> After doing some investigating, I found out some Linux installers default to **serial output (terminal)** which is why the graphical display doesnt display anything.
+> After doing some investigating, I found out some Linux installers default to **serial output (terminal)** which is why the graphical display doesn't display anything.
 >
 > To fix this, we can make the terminal appear on boot to then complete the setup steps.
 
@@ -90,7 +90,7 @@ Download the latest version of software for your device.
 
 <img alt="Serial settings" src="images/terminal-settings.png" width=100px>
 
-24. Boot the VM (2 windows will apear, the **GUI** and the **terminal**).
+24. Boot the VM (2 windows will appear, the **GUI** and the **terminal**).
 
 ### Kali Linux setup
 Using the Terminal, follow the following setup steps.
@@ -98,7 +98,7 @@ Using the Terminal, follow the following setup steps.
 25. Press **enter** on `Install`.
 26. Press **enter** on `English`.
 27. Press **enter** on your location.
-28. Press **enter** on the keymap (keyboard layout) you want to use.
+28. Press **enter** on the key map (keyboard layout) you want to use.
 
 > The install will then begin...
 
@@ -114,16 +114,16 @@ Using the Terminal, follow the following setup steps.
 35. Select `Guided - Use entire disk`.
 36. Select `Virtual disk 1 (vda)`.
 37. Select `All files in one partition`.
-38. Select `Finish partioning and write changes to disk`.
+38. Select `Finish partitioning and write changes to disk`.
 39. Select `Yes` to write the changes to disk.
 40. Select `Continue` to install packages and other software.
 
-> This install will take around 10 minuets.
+> This install will take around 10 minutes.
 
 41. Once the install is complete, select `continue` and the system will reboot.
 42. When you see the installer menu again, close and stop the VM.
 43. Select your VM from the list on the **UTM application**.
-44. At the bottom of the information pannel on the right, click the drop down for `CD/DVD`.
+44. At the bottom of the information panel on the right, click the drop down for `CD/DVD`.
 45. Click `Clear` to clear the .iso file.
 <img alt="clearing the .iso file" src="images/clear-iso-file.png" width=100px>
 
@@ -138,5 +138,5 @@ sudo apt get update
 sudo apt get upgrade
 ```
 
-You now have succefully setup a virtual machine running Kali linux on Mac.
+You now have successfully setup a virtual machine running Kali linux on Mac.
 
