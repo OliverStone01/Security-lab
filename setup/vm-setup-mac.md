@@ -125,7 +125,7 @@ Using the Terminal, follow the following setup steps.
 43. Select your VM from the list on the **UTM application**.
 44. At the bottom of the information panel on the right, click the drop down for `CD/DVD`.
 45. Click `Clear` to clear the .iso file.
-<img alt="clearing the .iso file" src="images/clear-iso-file.png" width=100px>
+<img alt="clearing the .iso file" src="images/clear-iso-file.png" width=300px>
 
 ### First boot
 46. After clearing the .iso file, boot the VM and login with the credentials you created earlier.
