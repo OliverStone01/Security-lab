@@ -140,3 +140,31 @@ sudo apt upgrade
 
 You now have successfully setup a virtual machine running Kali linux on Mac.
 
+### Closing your virtual machine
+When closing the virtual machine, it is important to close down the machine first before terminating the machine via UTM. If you fail to shut down the virtual machine first, your data may not be written to disk and may be lost.
+
+**Methods to shutting down the VM:**
+- Via Terminal:
+```
+# Method 1
+shutdown now
+
+# Method 2
+poweroff
+```
+
+- Via GUI
+    **Method 1**
+    - Click on `menu` in the top left of the toolbar.
+    - Click `Logout` in the bottom right of the menu.
+    - Click `Shutdown` on the pop up menu.
+ 
+    **Method 2**
+    - Click `Logout` in the top right of toolbar.
+    - Click `Shutdown` on the pop up menu.
+ 
+
+Once you have successfully shutdown the machine, you can close the VM windows.
+
+
+
