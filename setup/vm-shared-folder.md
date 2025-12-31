@@ -1,6 +1,16 @@
 # Setting up a shared folder between a host and virtual machine
 
-This guide lays out how I setup a **shared folder** between my host machine **(Apple Silicon M4 Mac)** and my virtual machine **(Kali Linux OS)**. If you have not yet setup your vm, you can use this [guide here](https://github.com/OliverStone01/Security-lab/blob/main/setup/vm-setup-mac.md) I created to help setup vm on Mac using UTM.
+This guide lays out how I setup a **shared folder** between my host machine **(Apple Silicon M4 Mac)** and my virtual machine **(Kali Linux OS)**.  
+
+If you have not yet setup your vm, you can use [my guide here](https://github.com/OliverStone01/Security-lab/blob/main/setup/vm-setup-mac.md) which walks through how to setup Kali Linux virtual machines on Mac using UTM.
+
+-----
+
+**PLEASE NOTE:** Directory sharing is **not persistent and will reset every time you restart your VM. I personally believe this is for the best as it helps prevent attackers or malware from getting access to your host system via your VM.  
+
+For this reason, I have created a script that you can add to your VM and run from the terminal to **activate or deactivate** directory sharing when needed. Each time sharing is enabled or disabled, you will be asked to enter your password.  
+
+It is possible to change `sudo` permissions to allow mounting and unmounting without needing to enter your password but this increases risk and removes an element of **least privilege**. Since you already need to enter your password when setting up directory sharing manually, I believe this is a fair trade off for improved security without needing to manually run commands each time.
 
 -----
 
@@ -13,7 +23,7 @@ This guide lays out how I setup a **shared folder** between my host machine **(A
 ### Setting up your folder on your host machine.
 
 1. Create a folder on your host machine.
-2. Create a file inside this folder called `test.txt`.
+2. Create a file inside your folder called `test.txt`.
 
 > By creating this file, we can later check if the connection worked inside the VM.
 
@@ -36,24 +46,24 @@ When asked to set up the `shared directory`, set the path to your folder on your
 
 -----
 
-### Setting up the shared folder in the VM:
+### MANUAL METHOD for setting up the shared folder in the VM:
 
 1. Boot your VM and login.
 2. Once your logged in, Open a terminal.
 3. In your terminal, run these commands:
 ```
-# First command (Creates a folder called "Share" in the /mnt directory)
+# First command (Creates a folder called "Share" in the /mnt directory) 
 $ sudo mkdir -p /mnt/share
 ```
 > The reason we use the `/mnt` directory is because in Linux, this is the location for temporary or manually mounted filesystems. We will later create a shortcut to this folder which you can place on your VM's desktop for easy access.
 >
-> You do not have to call the folder `share`, edit as you wish. 
+> This command only needs to be run once to create the **share folder**. Once this folder has been created, you **do not need to run this command next time** you want to connect to the shared directory.
 
 ```
 # Second command (Mounts the share folder)
 $ sudo mount -t 9p -o trans=virtio share /mnt/share
 ```
-
+> This is the command you will need to run each time you start your VM if you continue with the manual method.
 -----
 
 ### Checking the connection:
@@ -83,4 +93,63 @@ If you see `test.txt` as a result, the connection has worked.
 On your Desktop, you will now see a new folder which is linked to your share folder.
 
 -----
+
+### AUTOMATED SCRIPT METHOD for setting up the shared folder in the VM:
+
+1. Boot your VM and login.
+2. Once your logged in, you can either download the script from my GitHub [here](https://github.com/OliverStone01/Security-lab/blob/main/tools/custom-tools/toggle-share.sh). Or you can manually follow along below:
+
+### Creating the script:
+3. In your terminal, create the script file by running
+```
+$ nano ~/Desktop/toggle-share.sh
+```
+4. When the editor opens, paste this code:
+```
+#!/bin/bash
+
+SHARE_FOLDER="/mnt/share"
+
+# Check if share folder exists
+if [ ! -d "$SHARE_FOLDER" ]; then
+        echo "Creating share folder."
+        sudo mkdir -p "$SHARE_FOLDER"
+fi
+
+# Check if the directory is mounted
+if mountpoint -q "$SHARE_FOLDER"; then
+        echo "Stopping Directory Share..."
+        sudo umount "$SHARE_FOLDER"
+else
+        echo "Starting Directory Share..."
+        sudo mount -t 9p -o trans=virtio share "$SHARE_FOLDER"
+fi
+```
+5. To save, do `control + o` on your keyboard.
+6. Then close the editor with `control + x` on your keyboard.
+
+-----
+
+### Running the script.
+
+**Terminal method:**  
+> Make sure you are in the same directory where you saved the `toggle-share.sh` script before running the command.
+>
+> If you followed the script setup steps above, your script will be in the `/Desktop` directory.
+>
+> If you downloaded the script, it will be in your /Downloads directory.
+
+1. Open your terminal and run:
+```
+./toggle-share.sh
+```
+
+**Manual method:**
+1. Right click the script file
+2. Click on `Open with Terminal Emulator`
+
+> If you do not see `Open with Terminal Emulator`, Click on `Open with Other Application...`. Then find `Terminal Emulator` in the list of applications.
+
+
+
 
