@@ -18,7 +18,7 @@ This guide lays out how I setup a **shared folder** between my host machine **(A
 **If you are still setting up your VM**  
 When asked to set up the `shared directory`, set the path to your folder on your host machine you created earlier.
 
-<img alt="setting path to shared directory" src="images/setting-directory.png" width=200px>
+<img alt="setting path to shared directory" src="images/shared-directory.png" width=200px>
 
 **If your VM is already setup**
 - Go to the UTM application.
