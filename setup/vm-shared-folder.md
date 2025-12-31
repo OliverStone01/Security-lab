@@ -1,12 +1,12 @@
 # Setting up a shared folder between a host and virtual machine
 
-This guide lays out how I setup a **shared folder** between my host machine **(Apple Silicon M4 Mac)** and my virtual machine **(Kali Linux OS)**.  
+This guide lays out how I set up a **shared folder** between my host machine **(Apple Silicon M4 Mac)** and my virtual machine **(Kali Linux OS)**.  
 
-If you have not yet setup your vm, you can use [my guide here](https://github.com/OliverStone01/Security-lab/blob/main/setup/vm-setup-mac.md) which walks through how to setup Kali Linux virtual machines on Mac using UTM.
+If you have not yet set up your vm, you can use [my guide here](https://github.com/OliverStone01/Security-lab/blob/main/setup/vm-setup-mac.md) which walks through how to set up Kali Linux virtual machines on Mac using UTM.
 
 -----
 
-**PLEASE NOTE:** Directory sharing is **not persistent and will reset every time you restart your VM. I personally believe this is for the best as it helps prevent attackers or malware from getting access to your host system via your VM.  
+**PLEASE NOTE:** Directory sharing is **not persistent** and will reset every time you restart your VM. I personally believe this is for the best as it helps prevent attackers or malware from getting access to your host system via your VM.  
 
 For this reason, I have created a script that you can add to your VM and run from the terminal to **activate or deactivate** directory sharing when needed. Each time sharing is enabled or disabled, you will be asked to enter your password.  
 
@@ -14,7 +14,7 @@ It is possible to change `sudo` permissions to allow mounting and unmounting wit
 
 -----
 
-### Specifications (at the time of writting):
+### Specifications (at the time of writing):
 **MacOS:** Tahoe 26.1  
 **UTM version:** 4.7.4  
 **Kali Linux version:**  kali-linux-2025.4
@@ -36,26 +36,30 @@ When asked to set up the `shared directory`, set the path to your folder on your
 
 <img alt="setting path to shared directory" src="images/shared-directory.png" width=400px>
 
-**If your VM is already setup:**
+**If your VM is already set up:**
 - Go to the UTM application.
 - Select your VM.
-- In the infomation table on the right, find `Shared Directory` and select `Browse...`.
+- In the information table on the right, find `Shared Directory` and select `Browse...`.
 - Select the folder you created earlier.
 
 <img alt="Shared directory setting" src="images/shared-directory-settings.png" width=400px>
 
 -----
+> The manual method is useful for troubleshooting and understanding what's happening under the hood.
+> 
+> The automated script method is recommended for daily use.
+-----
 
 ### MANUAL METHOD for setting up the shared folder in the VM:
 
 1. Boot your VM and login.
-2. Once your logged in, Open a terminal.
+2. Once you're logged in, Open a terminal.
 3. In your terminal, run these commands:
 ```
 # First command (Creates a folder called "Share" in the /mnt directory) 
 $ sudo mkdir -p /mnt/share
 ```
-> The reason we use the `/mnt` directory is because in Linux, this is the location for temporary or manually mounted filesystems. We will later create a shortcut to this folder which you can place on your VM's desktop for easy access.
+> The reason we use the `/mnt` directory is because in Linux, this is the location for temporary or manually mounted filesystems. We will later create a shortcut to this folder which you can place on your VMs desktop for easy access.
 >
 > This command only needs to be run once to create the **share folder**. Once this folder has been created, you **do not need to run this command next time** you want to connect to the shared directory.
 
@@ -68,7 +72,7 @@ $ sudo mount -t 9p -o trans=virtio share /mnt/share
 
 ### Checking the connection:
 
-We can check the connection by checking if the `test.txt` file apears in the `share` folder. From a terminal, enter this command:
+We can check the connection by checking if the `test.txt` file appears in the `share` folder. From a terminal, enter this command:
 ```
 # Checking for test.txt file in the share folder
 $ ls /mnt/share
@@ -135,7 +139,7 @@ fi
 **Terminal method:**  
 > Make sure you are in the same directory where you saved the `toggle-share.sh` script before running the command.
 >
-> If you followed the script setup steps above, your script will be in the `/Desktop` directory.
+> If you followed the script set up steps above, your script will be in the `/Desktop` directory.
 >
 > If you downloaded the script, it will be in your /Downloads directory.
 
