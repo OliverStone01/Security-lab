@@ -109,6 +109,12 @@ On your Desktop, you will now see a new folder which is linked to your share fol
 $ nano ~/Desktop/toggle-share.sh
 ```
 4. When the editor opens, paste this code:
+
+> This script checks if the directory is already being shared or not.
+>
+> If the directory is not being shared, the script will mount the directory.
+>
+> Otherwise, the script will unmount the directory.
 ```
 #!/bin/bash
 
