@@ -15,7 +15,7 @@ This guide lays out how I setup a **shared folder** between my host machine **(A
 
 1. Create a folder on your host machine.
 
-**If you are still setting up your VM**
+**If you are still setting up your VM**  
 When asked to set up the `shared directory`, set the path to your folder on your host machine you created earlier.
 
 <img alt="setting path to shared directory" src="images/setting-directory.png" width=200px>
