@@ -24,7 +24,7 @@ This guide lays out how I setup a **shared folder** between my host machine **(A
 **If you are still setting up your VM:**  
 When asked to set up the `shared directory`, set the path to your folder on your host machine you created earlier.
 
-<img alt="setting path to shared directory" src="images/shared-directory.png" width=300px>
+<img alt="setting path to shared directory" src="images/shared-directory.png" width=400px>
 
 **If your VM is already setup:**
 - Go to the UTM application.
@@ -32,7 +32,7 @@ When asked to set up the `shared directory`, set the path to your folder on your
 - In the infomation table on the right, find `Shared Directory` and select `Browse...`.
 - Select the folder you created earlier.
 
-<img alt="Shared directory setting" src="images/shared-directory-settings.png" width=300px>
+<img alt="Shared directory setting" src="images/shared-directory-settings.png" width=400px>
 
 -----
 
@@ -71,14 +71,14 @@ If you see `test.txt` as a result, the connection has worked.
 ### Creating a Desktop shortcut
 
 1. On your VM, open `File System` from your Desktop or file explorer.
-<img alt="File system" src="images/file-system.png" width=300px>
+<img alt="File system" src="images/file-system.png" width=400px>
 
 2. Open your `mnt` folder
 3. Right click (Two finger click on Mac) on the `share` folder.
 4. Click on `Send To`
 5. Click on `Desktop (Create Link)`
 
-<img alt="Desktop link" src="images/Desktop-link.png" width=300px>
+<img alt="Desktop link" src="images/Desktop-link.png" width=400px>
 
 On your Desktop, you will now see a new folder which is linked to your share folder.
 
