@@ -71,20 +71,16 @@ If you see `test.txt` as a result, the connection has worked.
 ### Creating a Desktop shortcut
 
 1. On your VM, open `File System` from your Desktop or file explorer.
-<img alt="File system" src="" width=300px>
+<img alt="File system" src="images/file-system.png" width=300px>
 
 2. Open your `mnt` folder
 3. Right click (Two finger click on Mac) on the `share` folder.
 4. Click on `Send To`
 5. Click on `Desktop (Create Link)`
 
-<img alt="Desktop link" src="" width=300px>
+<img alt="Desktop link" src="images/Desktop-link.png" width=300px>
 
 On your Desktop, you will now see a new folder which is linked to your share folder.
 
 -----
-
-
-
-
 
