@@ -26,7 +26,7 @@ When asked to set up the `shared directory`, set the path to your folder on your
 - In the infomation table on the right, find `Shared Directory` and select `Browse...`.
 - Select the folder you created earlier.
 
-<img alt="Shared directory setting" src="images/shared-directory-setting.png" width=200px>
+<img alt="Shared directory setting" src="images/shared-directory-settings.png" width=200px>
 
 -----
 
