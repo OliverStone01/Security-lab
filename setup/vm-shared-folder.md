@@ -100,6 +100,11 @@ On your Desktop, you will now see a new folder which is linked to your share fol
 
 ### AUTOMATED SCRIPT METHOD for setting up the shared folder in the VM:
 
+> **What this script does:**  
+> The script first checks if the `share` folder exists in the `/mnt` directory. If the folder does not exist, it creates the folder for you. If the folder already exists, the script checks to see if the directory is already being shared. If its not being shared, it mounts (connects) the directory. If it is being shared already, it unmounts (disconnects) the directory.
+>
+> This method means you can toggle between connected and disconnected without needing diffrent scripts or multiple commands.
+
 1. Boot your VM and login.
 2. Once your logged in, you can either download the script from my GitHub [here](https://github.com/OliverStone01/Security-lab/blob/main/tools/custom-tools/toggle-share.sh). Or you can manually follow along below:
 
@@ -109,12 +114,7 @@ On your Desktop, you will now see a new folder which is linked to your share fol
 $ nano ~/Desktop/toggle-share.sh
 ```
 4. When the editor opens, paste this code:
-
-> This script checks if the directory is already being shared or not.
->
-> If the directory is not being shared, the script will mount the directory.
->
-> Otherwise, the script will unmount the directory.
+   
 ```
 #!/bin/bash
 
@@ -147,12 +147,13 @@ fi
 >
 > If you followed the script set up steps above, your script will be in the `/Desktop` directory.
 >
-> If you downloaded the script, it will be in your /Downloads directory.
+> If you downloaded the script, it will be in your `/Downloads` directory.
 
 1. Open your terminal and run:
 ```
 ./toggle-share.sh
 ```
+> This is the only command you need for running this script.  
 
 **Manual method:**
 1. Right click the script file
