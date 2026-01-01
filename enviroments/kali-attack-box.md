@@ -52,7 +52,7 @@ I maintain **two versions** of my attack box:
 - Data is only temporarily stored before being transferred and deleted from VM to prevent leak or loss of data.
 
 
-By using this technique, I can test vulnerable software and break machines without needing to calibrate a new machine or try to fix the machine to save data. This also reduces the risk of **persistent compromise**.
+By using this technique, I can test vulnerable software and break machines without needing to rebuild a new machine or try to fix the machine to save data. This also reduces the risk of **persistent compromise**.
 
 -----
 
@@ -65,5 +65,6 @@ My shared directory is **disabled by default** and is toggled on and off with my
 [Here is a link](https://github.com/OliverStone01/Security-lab/blob/main/setup/vm-shared-folder.md) to the repository where I talk more about how this system functions and how the script works.
 
 -----
+
 
 
