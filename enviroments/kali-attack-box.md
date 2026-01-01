@@ -1,12 +1,12 @@
 # Attack Box environment (Kali Linux)
 
-This repository describes how I use my **attack environments** in a secure and ethical manner for **CTFs, tool testing, and skill development**. These enviroments are **not** used as daily drivers and they **do not** contain any personal data or important long term data.  
+This repository describes how I use my **attack environments** in a secure and ethical manner for **CTFs, tool testing, and skill development**. These environments are **not** used as daily drivers and they **do not** contain any personal data or important long term data.  
 
 -----
 
 ### The purpose of my attack box
 
-My attack environment is designed to be a controlled temporary environment for learning cyber security. Running this environment in a virtual machine instead of directly on my host device allows me to run tools and interact with targets without the risk of leaking/loosing sensitive data or corrupting my host device.
+My attack environment is designed to be a controlled temporary environment for learning cyber security. Running this environment in a virtual machine instead of directly on my host device allows me to run tools and interact with targets without the risk of leaking/losing sensitive data or corrupting my host device.
 
 To do this, I keep two versions of my attack environment (Active & Clean).
 
@@ -49,22 +49,23 @@ I maintain **two versions** of my attack box:
 **Active environment:**
 - A cloned version of my `clean environment`.
 - Used for active work (CTFs, labs, tool testing).
-- Data is only temperarily stored before being transfered and deleted from VM to prevent leak or lose of data.
+- Data is only temporarily stored before being transferred and deleted from VM to prevent leak or lose of data.
 
 
-By using this technique, I can test vulnerable software and break machines without needing to callibrate a new machine or try to fix the machine to save data. By deleting machines, it also reducing the risk of **persistent compromise**.
+By using this technique, I can test vulnerable software and break machines without needing to calibrate a new machine or try to fix the machine to save data. By deleting machines, it also reducing the risk of **persistent compromise**.
 
 -----
 
 ### Filesystem and Data handling
 
-I do **not** permanently store data on my VM as a preventative messure to protect against data leaks and loss of data. To move data off my VM, I use a `shared directory` with my host machine.
+I do **not** permanently store data on my VM as a preventative measure to protect against data leaks and loss of data. To move data off my VM, I use a `shared directory` with my host machine.
 
 My shared directory is **disabled by default** and is toggled on and off with my `toggle-fileShare` script I created.  
 
 [Here is a link](https://github.com/OliverStone01/Security-lab/blob/main/setup/vm-shared-folder.md) to the repository where I talk more about how this system functions and how the script works.
 
 -----
+
 
 
 
