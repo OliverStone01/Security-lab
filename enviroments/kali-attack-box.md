@@ -6,7 +6,7 @@ This repository describes how I use my **attack environments** in a secure and e
 
 ### The purpose of my attack box
 
-My attack environment is designed to be a controlled temporary environment for learning cyber security. Running this environment in a virtual machine instead of directly on my host device allows me to run tools and interact with targets without the risk of leaking/losing sensitive data or corrupting my host device.
+My attack environment is designed to be a controlled temporary environment for learning cyber security. Running this environment in a virtual machine instead of directly on my host device allows me to run tools and interact with targets without the risk of leaking or losing sensitive data or corrupting my host device.
 
 To do this, I keep two versions of my attack environment (Active & Clean).
 
@@ -16,7 +16,7 @@ To do this, I keep two versions of my attack environment (Active & Clean).
 
 **Host machine:**  
 - Apple Silicon Mac (M4)  
-- MacOS Tahoe 26.1 (Current at time of writing)  
+- macOS Tahoe 26.1 (Current at time of writing)  
 
 **Virtual machine:**
 - Hypervisor: UTM
@@ -26,7 +26,7 @@ To do this, I keep two versions of my attack environment (Active & Clean).
 - CPU Cores: 2-4
 - Storage: 64 GB minimum
 
-> Resources are adjust depending on workload.
+> Resources are adjusted depending on workload.
 
 I choose **Kali Linux** as my operating system as it comes with a wide range of security tools out of the box. This allows me to discover new tools and understand how each tool works.  
 
@@ -49,10 +49,10 @@ I maintain **two versions** of my attack box:
 **Active environment:**
 - A cloned version of my `clean environment`.
 - Used for active work (CTFs, labs, tool testing).
-- Data is only temporarily stored before being transferred and deleted from VM to prevent leak or lose of data.
+- Data is only temporarily stored before being transferred and deleted from VM to prevent leak or loss of data.
 
 
-By using this technique, I can test vulnerable software and break machines without needing to calibrate a new machine or try to fix the machine to save data. By deleting machines, it also reducing the risk of **persistent compromise**.
+By using this technique, I can test vulnerable software and break machines without needing to calibrate a new machine or try to fix the machine to save data. This also reduces the risk of **persistent compromise**.
 
 -----
 
@@ -65,4 +65,5 @@ My shared directory is **disabled by default** and is toggled on and off with my
 [Here is a link](https://github.com/OliverStone01/Security-lab/blob/main/setup/vm-shared-folder.md) to the repository where I talk more about how this system functions and how the script works.
 
 -----
+
 
