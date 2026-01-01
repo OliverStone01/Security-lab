@@ -42,17 +42,24 @@ I maintain **two versions** of my attack box:
 - A maintained updated install of Kali Linux.
 - Contains no engagement data.
 - Includes my shared folder toggle script.
-- Never used directly for attacks or CTFs.
+- Never used directly for tasks.
 
 **Active environment:**
-- Cloned clean environment VM.
+- A cloned version of my `clean environment`.
 - Used for active work (CTFs, labs, tool testing).
-- Data is transfered to host device and deleted from VM after every use to prevent leak or lose of data.
+- Data is only temperarily stored before being transfered and deleted from VM to prevent leak or lose of data.
 
 
-By using this technique, it allows me to test features, break machines, and test malware without the need to start from scratch again or needing to fix the machine. By deleting machines, I'm also reducing the risk of persistent compromise.
+By using this technique, it allows me to test features, break machines, and test vulnerable software without the need to callibrate a new machine each time or needing to fix the machine to save data. By deleting machines, it also reducing the risk of **persistent compromise**.
 
 -----
+
+### Filesystem and Data handling
+
+My attack box does **not** permanently store data as a preventative messure to protect against data leaks and loss of data. To move data off my VM, I use a `shared directory` with my host machine.
+
+My shared directory is **disabled by default** and is toggled on and off with my `toggle-fileShare` script I created.
+
 
 
 
