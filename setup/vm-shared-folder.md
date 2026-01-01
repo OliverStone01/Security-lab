@@ -89,7 +89,7 @@ If you see `test.txt` as a result, the connection has worked.
 
 2. Open your `mnt` folder
 3. Right click (Two finger click on Mac) on the `share` folder.
-4. Click on `Send To`
+4. Hover over `Send To`
 5. Click on `Desktop (Create Link)`
 
 <img alt="Desktop link" src="images/Desktop-link.png" width=400px>
