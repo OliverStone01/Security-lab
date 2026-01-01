@@ -66,24 +66,3 @@ My shared directory is **disabled by default** and is toggled on and off with my
 
 -----
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
