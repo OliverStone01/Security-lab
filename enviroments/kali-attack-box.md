@@ -30,7 +30,9 @@ To do this, I keep two versions of my attack environment (Active & Clean). If my
 
 I choose **Kali Linux** as my operating system as it comes with a wide range of security tools out of the box. This allows me to discover new tools and understand how each tool works.  
 
-All the tools I learn and test are documented on my GitHub with information on how the tool works and what tricks I picked up while using them.
+All the tools I learn and test are documented on my GitHub [here](https://github.com/OliverStone01/Security-lab/tree/main/tools) with information on how the tool works and what tricks I picked up while using them.
+
+I created [this repository](https://github.com/OliverStone01/Security-lab/blob/main/setup/vm-setup-mac.md) to explain how to set up virtual machines on Mac using UTM.
 
 -----
 
@@ -56,9 +58,15 @@ By using this technique, it allows me to test features, break machines, and test
 
 ### Filesystem and Data handling
 
-My attack box does **not** permanently store data as a preventative messure to protect against data leaks and loss of data. To move data off my VM, I use a `shared directory` with my host machine.
+I do **not** permanently store data on my VM as a preventative messure to protect against data leaks and loss of data. To move data off my VM, I use a `shared directory` with my host machine.
 
-My shared directory is **disabled by default** and is toggled on and off with my `toggle-fileShare` script I created.
+My shared directory is **disabled by default** and is toggled on and off with my `toggle-fileShare` script I created.  
+
+[Here is a link](https://github.com/OliverStone01/Security-lab/blob/main/setup/vm-shared-folder.md) to the repository where I talk more about how this system functions and how the script works.
+
+-----
+
+
 
 
 
