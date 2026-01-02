@@ -1,6 +1,6 @@
 # OpenVPN
 
-This document is about how to use OpenVPN on any operating system. OpenVPN is a free open source VPN service that I use on my `attack box` to connect to external lab networks like `Try Hack Me`.  
+This document is about how to use OpenVPN on any operating system. OpenVPN is a free, open source VPN client that I use on my `attack box` to connect to external lab networks like `Try Hack Me`.  
 
 You can download openVPN [here](https://openvpn.net).  
 Or you can download the software via the terminal with this command:
@@ -9,6 +9,18 @@ $ sudo apt install openvpn
 ```
 
 Before you can connect to a network, you first need to download the `configuration` file for the network you are trying to get access to.
+
+-----
+
+### Linux
+1. Locate the full path to your configuration file.
+2. Run the following command:
+```
+$ sudo openvpn /path-to-file/file-name.ovpn
+```
+
+**To disconnect:**
+1. Press `Ctrl + c` on the terminal that is running the VPN.
 
 -----
 
@@ -55,18 +67,6 @@ Before you can connect to a network, you first need to download the `configurati
 **To disconnect:**
 1. Right click on the application icon.
 2. Select your file and click `Disconnect`.
-
------
-
-### Linux
-1. Locate the full path to your configuration file.
-2. Run the following command:
-```
-$ sudo openvpn /path-to-file/file-name.ovpn
-```
-
-**To disconnect:**
-1. Press `Ctrl + c` on the terminal that is running the VPN.
 
 -----
 
