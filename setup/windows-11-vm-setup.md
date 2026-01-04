@@ -93,7 +93,7 @@ Download the latest version of software for your device.
 ### Installing Windows 11
 
 16. Press play on your VM to boot for the first time.
-17. When prompted to `press enter or any key`, make sure you press enter to prevent input error.
+17. When prompted to `press any key`, make sure you press enter to prevent input error.
 <img alt="enter any key" src="images/windows-press-any-key.jpeg" width=300px>
 
 18. Set your `language` and `time and currency format`.
