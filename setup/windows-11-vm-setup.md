@@ -85,7 +85,7 @@ Download the latest version of software for your device.
 13. Set your shared directory location by using `Browse..`. Make sure to set a location that is convenient to access. For example, your Desktop.
 <img alt="Shared directory" src="images/shared-directory.png" width=300px>
 
-14. Change the name to whatever you want to call the virtual machine.
+14. Change `name` to whatever you want to call the virtual machine.
 15. Save the virtual machine.
 
 -----
