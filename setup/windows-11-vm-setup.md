@@ -145,7 +145,7 @@ Download the latest version of software for your device.
 
 ### UTM Guest tools setup
 
-When your machine loads for the first time, you will be prompted to install the `UTM Guest tools`.
+> When your machine loads for the first time, you will be prompted to install the `UTM Guest tools`.
 <img alt="UTM guest tools" src="images/UTM-guest-tools.png" width=300px>
 
 35. Click next and the tools will begin to install.
