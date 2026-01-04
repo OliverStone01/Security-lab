@@ -19,7 +19,6 @@ Download the latest version of software for your device.
     [UTM Downloader for Mac](https://mac.getutm.app)  
     [Windows 11.iso boot file](https://www.microsoft.com/en-us/software-download/windows11arm64)
 
-
 -----
 
 ### Downloading UTM for Mac
@@ -27,10 +26,12 @@ Download the latest version of software for your device.
 2. Open the downloaded **UTM launcher** and follow steps to move UTM to the application folder.
 3. You do **not** need to open UTM until you have downloaded the Kali linux OS in the next steps.
 
-### Download the latest Windows 11 ARM .iso file
+-----
+
+### Downloading the latest Windows 11 ARM .iso file
 
 > **IMPORTANT NOTE:**  
-> When I tried to install the .iso file using Safari, I get this error:
+> When I tried to install the .iso file using Safari, I got this error:
 
 <img alt="Windows iso download error" src="images/windows-iso-download-error.png" width=300px>
 
@@ -38,9 +39,12 @@ Download the latest version of software for your device.
 
 4. Go to the [Windows 11 ARM installer](https://www.microsoft.com/en-us/software-download/windows11arm64) via a Chrome browser and download the latest .iso file.
 
-5.**DO NOT OPEN** the .iso file once it's downloaded.
+5. **DO NOT OPEN** the .iso file once it's downloaded.
+
+-----
 
 ### Setting up the virtual machine
+
 6. Open the UTM application.
 <img alt="Screenshot of UTM welcome page" src="images/welcome-UTM.png" width=400px>
 
