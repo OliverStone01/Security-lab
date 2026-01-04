@@ -7,7 +7,7 @@ This guide lays out how I set up Virtual machines on an **Apple Silicon M4 Mac**
 
 **MacOS:** Tahoe 26.1  
 **UTM version:** 4.7.4  
-**Windows 11 version:**   
+**Windows 11 version:** Windows 11 2025 Update l Version 25H2  
 **Storage Required:**  64 GB for best results (40 GB minimum).  
 **Memory:**  6 GB for best results (4 GB minimum).  
 **CPU Cores:** 4 for best results. (2 cores minimum)
