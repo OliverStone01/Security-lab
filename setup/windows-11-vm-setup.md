@@ -92,12 +92,12 @@ Download the latest version of software for your device.
 
 16. Press play on your VM to boot for the first time.
 17. When prompted to `press enter or any key`, make sure you press enter to prevent input error.
-<img alt="enter any key" src="" width=300px>
+<img alt="enter any key" src="images/windows-press-any-key.jpeg" width=300px>
 
 18. Set your `language` and `time and currency format`.
 19. Set your keyboard settings.
 20. When prompted for a product key, select `I don't have a product key`.
-<img alt="Product key" src="" style=300px>
+<img alt="Product key" src="images/windows-product-key.png" style=300px>
 
 21. Select the version of windows you would like to use. For this example, I will select `Windows 11 Home`.
 22. Read and `Accept` the software license terms.
@@ -107,21 +107,27 @@ Download the latest version of software for your device.
 
 > Windows will now begin installing.
 
+<img alt="Windows first install" src="images/windows-first-install.png" width=300px>
+
 24. Once the first intall has complete, the VM will restart. Terminate your VM before the second install.
 
 25. Select your VM in the UTM application.
 26. At the bottom of the information panel on the right, there are two drop downs that say `CD/DVD`. Click the drop down for the .iso file and click `clear`.
-<img alt="Clearing iso file" src="" width=300px>
+<img alt="Clearing iso file" src="images/windows-clearing-iso.png" width=300px>
 
 27. Boot the VM again.
 
 > The second install will now begin. Exepct your VM to restart atleast once.
+
+<img alt="Second install" src="images/windows-second-install.png" width=300px>
 
 -----
 
 ### Setting up Windows 11
 
 > Once the install is complete, you will be prompted to setup Windows 11.
+
+<img alt="Setting up windows" src="images/windows-setup.png" width=300px>
 
 28. Select your country.
 29. Select your keyboard layout.
@@ -133,8 +139,17 @@ Download the latest version of software for your device.
 
 > Windows will now begin to set up your system.
 
+-----
 
+### UTM Guest tools setup
 
+When your machine loads for the first time, you will be prompted to install the `UTM Guest tools`.
+<img alt="UTM guest tools" src="images/UTM-guest-tools.png" width=300px>
+
+35. Click next and the tools will begin to install.
+36. Click finish.
+
+-----
 
 
 
