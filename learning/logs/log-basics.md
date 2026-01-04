@@ -1,4 +1,4 @@
-# Log basics
+# Log Basics (Level 0)
 
 **What are logs?**  
 Logs are files of data that the system has written about what an event that occured. The system is told what data it should care about and save.
