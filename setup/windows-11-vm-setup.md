@@ -72,7 +72,6 @@ Download the latest version of software for your device.
 
 10. Set your memory and CPU core allocation as needed.
 11. For boot option, use the `Browse...` option and select the **Windows 11 .iso file** you downloaded earlier.
-12. Make sure to enable `UEFI Boot` and `Secure Boot with TPM 2.0`.
 <img alt="Enable boot options" src="images/windows-boot-options.png" width=300px>
 
 > **Storage**
@@ -86,6 +85,8 @@ Download the latest version of software for your device.
 13. Set your shared directory location by using `Browse..`. Make sure to set a location that is convenient to access. For example, your Desktop.
 14. Change the name to whatever you want to call the virtual machine.
 15. Save the virtual machine.
+
+-----
 
 
 
