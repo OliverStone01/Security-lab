@@ -1,4 +1,4 @@
-# Setting up virtual machines on Mac
+# Setting up a Kali Linux virtual machines on Mac
 
 This guide lays out how I set up Virtual machines on an **Apple Silicon M4 Mac** using **UTM** software to run **Kali Linux**. I created this guide to help other beginners, CTF players, and security students who want a reliable Kali Linux virtual machine while bypassing and understanding common errors that occur during setup.
 
