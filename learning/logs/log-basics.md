@@ -42,7 +42,7 @@ Logs are incomplete because systems are not configured to log everything by defa
 
 -----
 
-**What "normal activity" means**
+**What "normal activity" means**  
 Normal means the system is working as expected at that time. Some alerts may seem conserning but are actually completely norrmal. For example:
 - Failed login attempts
 - Admin logins
