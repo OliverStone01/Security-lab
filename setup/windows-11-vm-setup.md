@@ -97,7 +97,7 @@ Download the latest version of software for your device.
 18. Set your `language` and `time and currency format`.
 19. Set your keyboard settings.
 20. When prompted for a product key, select `I don't have a product key`.
-<img alt="Product key" src="images/windows-product-key.png" style=300px>
+<img alt="Product key" src="images/windows-product-key.png" width=300px>
 
 21. Select the version of windows you would like to use. For this example, I will select `Windows 11 Home`.
 22. Read and `Accept` the software license terms.
