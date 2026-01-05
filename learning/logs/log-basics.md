@@ -6,7 +6,13 @@ Logs are files of data that the system has written about what an event that occu
 -----
 
 **Why do we use logs?**  
-Logs are used for troubleshooting, audits, detcting misuse, and to help prove something happened (**non-repudiation**).
+Logs are used for troubleshooting, audits, detcting misuse, and to help prove something happened (**non-repudiation**). Logs help to answer critical questions such as:
+- What happened?
+- When did it happen?
+- Where did it happen?
+- Who is responsible?
+- Were their actions successful?
+- What was the result of their action?
 
 -----
 
@@ -19,7 +25,7 @@ Something that happened. Such as:
 -----
 
 **What is a log entry?**  
-A record of an event. Not all events become log entries. Only the events the system has been configured to record.
+A record of an event. Not all events become log entries. Only the events the system has been configured to record. Log entrys usually include a timestamp of when the event was logged, the name of the system or application that generated the log entry, the type of event that occurred, additional details about the event (the user who initiated the event or the device's IP address that generated the event).
 
 -----
 
