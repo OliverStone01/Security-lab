@@ -69,5 +69,22 @@ Common signs they work with:
 
 ### Security engineer
 
+Security engineers design, build, and maintain systems to prevent security threats. Their main goal is how to prevent threats from happening in the first place.
 
+Common problems they deal with:
+- Poor logging coverage.
+- Weak detection rules.
+- Misconfigured systems.
+- Security tools not working correctly.
+- Infrastructure gaps.
 
+Common signs they work with:
+- Architecture diagrams.
+- Log coverage reports.
+- Detection gaps.
+- Performance metrics.
+- Past incident reports.
+
+Security engineers use previous events and system data to improve overall security. Their work allows security analysts and SOC teams to do their job effectively.
+
+-----
