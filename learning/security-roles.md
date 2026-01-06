@@ -6,4 +6,13 @@ This file explains common IT and security roles and what problems they solve. I 
 
 ### IT support / helpdesk
 
-IT support are the first point of contact for users when something goes wrong with their device.
+IT support are the first point of contact for users when something goes wrong with their device. 
+
+Common problems they solve include:
+- User's can't log in
+- Laptop is slow
+- Network conection dropped
+- Software won't install
+- Account locked out
+
+ 
