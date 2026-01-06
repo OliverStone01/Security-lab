@@ -24,6 +24,28 @@ Common signs they work with:
 
 When a suspicious issue occurs, they don't investigate, they escalate.
 
+#### Systems and tools:  
+
+**OS tools:**  
+  - Windows Event Viewer
+  - Task manager
+  - Services
+  - Disk management
+ 
+**User and access tools:**  
+  - Active directory
+  - Local users and groups
+  - Password reset tools
+ 
+**Networking basics:**  
+  - `ipconfig`/`ifconfig`
+  - `ping`, `tracert`, and `nslookup`
+ 
+**Ticketing:**  
+  - ServiceNow
+  - Jira
+  - Zendesk
+
 -----
 
 ### SOC analyst
