@@ -6,23 +6,21 @@ This file explains common IT and security roles and what problems they solve. I 
 
 ### IT support / helpdesk
 
-IT support / helpdesk are the first point of contact for users when something goes wrong with their device or network. Their main focus is **availability and usability**.
+IT support / helpdesk are the first point of contact for users when something goes wrong with their device or network. Their main focus is **availability and usability**. When a suspicious issue occurs, they don't investigate, they escalate.
 
-Common problems they deal with:
+**Common problems they deal with:**
 - User's can't log in.
 - Laptop is slow.
 - Network conection dropped.
 - Software won't install.
 - Account locked out.
 
-Common signs they work with:
+**Common signs they work with:**
 - User reports.
 - System error messages.
 - Basic logs.
 - Device status.
 - Simple monitoring dashboards.
-
-When a suspicious issue occurs, they don't investigate, they escalate.
 
 #### Systems and tools:  
 
