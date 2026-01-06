@@ -46,3 +46,28 @@ Common signs they work with:
 SOC analysts do not fix systems, they investigate by following playbooks and work with predefined alerts. If an issue is found, they escalate.
 
 -----
+
+### Security analyst
+
+Security analysts investigate security events to understand what happened and why. They then help guide decisions about how to prevent this happening again.
+
+Common problems they deal with:
+- Deciding if activity is malicious or normal.
+- How the event took place.
+- What systems or data has been effected.
+- What should change to prevent this happening again.
+
+Common signs they work with:
+- Lots of logs.
+- Alerts.
+- Network traffic.
+- System configurations.
+- Authentication records.
+- Timeline reconstruction.
+
+-----
+
+### Security engineer
+
+
+
