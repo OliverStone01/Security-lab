@@ -48,22 +48,40 @@ IT support / helpdesk are the first point of contact for users when something go
 
 ### SOC analyst
 
-SOC analysts monitor security alerts using SIEM tools (Security Information and Event Management), firewalls, and endpoint protection systems to detect suspicious activity. 
+SOC analysts monitor security alerts using SIEM tools (Security Information and Event Management), firewalls, and endpoint protection systems to detect suspicious activity. SOC analysts do not fix systems, they investigate by following playbooks and work with predefined alerts. If an issue is found, they escalate. 
 
-Common problems they deal with:
+**Common problems they deal with:**  
 - Alerts.
 - Potential attacks detected by tools.
 - Suspicious log activity.
 - Determining whether an incident is real or a false positive.
 
-Common signs they work with:
+**Common signs they work with:**  
 - Alerts from SIEMs.
 - Authentication logs.
 - Firewall logs.
 - Endpoint security alerts.
 - IDS/IPS events.
 
-SOC analysts do not fix systems, they investigate by following playbooks and work with predefined alerts. If an issue is found, they escalate.
+**Monitoring and alerting**  
+- SIEMs (Splunk, Elastic, Sentinel).
+- IDS/IPS (Suricata, Snort).
+- EDR tools (Defender for endpoint, CrowdStrike).
+
+**Log sources**  
+- Firewall logs.
+- Authentication logs.
+- VPN logs.
+- Endpoint logs.
+
+**Network visability**  
+- Wireshark (Basic usage).
+- Network dashboards.
+
+**Ticketing and workflows**  
+- ServiceNow
+- Jira
+- Case management tools
 
 -----
 
