@@ -63,22 +63,22 @@ SOC analysts monitor security alerts using SIEM tools (Security Information and 
 - Endpoint security alerts.
 - IDS/IPS events.
 
-**Monitoring and alerting**  
+**Monitoring and alerting:**  
 - SIEMs (Splunk, Elastic, Sentinel).
 - IDS/IPS (Suricata, Snort).
 - EDR tools (Defender for endpoint, CrowdStrike).
 
-**Log sources**  
+**Log sources:**  
 - Firewall logs.
 - Authentication logs.
 - VPN logs.
 - Endpoint logs.
 
-**Network visability**  
+**Network visability:**  
 - Wireshark (Basic usage).
 - Network dashboards.
 
-**Ticketing and workflows**  
+**Ticketing and workflows:**  
 - ServiceNow
 - Jira
 - Case management tools
@@ -103,11 +103,31 @@ Common signs they work with:
 - Authentication records.
 - Timeline reconstruction.
 
+**Log analysis:**  
+- SIEM query languages
+- `grep`, `awk`, `journalct1`
+- Windows Event Viewer
+
+**Investigation tools:**  
+- Wireshark
+- Sysinternals tools
+- Timeline tools
+
+**Threat context:**  
+- VirusTotal
+- AbuseIPDB
+- MITRE ATT&CK
+
+**OS tools:**
+- PowerShell
+- Bash
+- Process inspection tools
+
 -----
 
 ### Security engineer
 
-Security engineers design, build, and maintain systems to prevent security threats. Their main goal is how to prevent threats from happening in the first place.
+Security engineers design, build, and maintain systems to prevent security threats. Their main goal is how to prevent threats from happening in the first place. Security engineers use previous events and system data to improve overall security. Their work allows security analysts and SOC teams to do their job effectively.
 
 Common problems they deal with:
 - Poor logging coverage.
@@ -123,6 +143,24 @@ Common signs they work with:
 - Performance metrics.
 - Past incident reports.
 
-Security engineers use previous events and system data to improve overall security. Their work allows security analysts and SOC teams to do their job effectively.
+**Infrastructure and config:**
+- SIEM configuration tools.
+- Logging pipelines (Elastic, Fluentd, Beats).
+- Firewall configuration tools.
+
+**Automation:**  
+- Python
+- PowerShell
+- Bash
+
+**Cloud and platform tools:**
+- AWS / Azure security tools.
+- IAM configuration.
+- Cloud logging service.
+
+**Detection engineering:**
+- Custom alert rules.
+- Sigma rules.
+- Detection tuning tools.
 
 -----
