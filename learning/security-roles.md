@@ -9,7 +9,7 @@ This file explains common IT and security roles and what problems they solve. I 
 IT support / helpdesk are the first point of contact for users when something goes wrong with their device or network. Their main focus is **availability and usability**. When a suspicious issue occurs, they don't investigate, they escalate.
 
 **Common problems they deal with:**
-- User's can't log in.
+- Users can't log in.
 - Laptop is slow.
 - Network conection dropped.
 - Software won't install.
@@ -74,7 +74,7 @@ SOC analysts monitor security alerts using SIEM tools (Security Information and 
 - VPN logs.
 - Endpoint logs.
 
-**Network visability:**  
+**Network visibility:**  
 - Wireshark (Basic usage).
 - Network dashboards.
 
@@ -105,7 +105,7 @@ Common signs they work with:
 
 **Log analysis:**  
 - SIEM query languages
-- `grep`, `awk`, `journalct1`
+- `grep`, `awk`, `journalctl`
 - Windows Event Viewer
 
 **Investigation tools:**  
@@ -156,7 +156,7 @@ Common signs they work with:
 **Cloud and platform tools:**
 - AWS / Azure security tools.
 - IAM configuration.
-- Cloud logging service.
+- Cloud logging services.
 
 **Detection engineering:**
 - Custom alert rules.
