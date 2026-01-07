@@ -27,5 +27,15 @@ Event Viewer is the main tool used in Windows to view logs. You can browse logs 
 
 What events (including the level of detail and for how long logs are retained) is controlled by the administrators looking at security policies, group policies, application configurations and system audit settings.
 
+-----
+
+### Where are logs kept on your device?
+
+Windows logs are stored in a `binary` format which is why we use Windows Event Viewer to look at these logs. The primary location where these files are stored is:  
+```
+C:\Windows\System32\winevt\Logs\
+```
+
+Log files use `.evtx` file format.
 
 
