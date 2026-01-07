@@ -21,3 +21,11 @@ Each **Event Log** includes:
 
 Event viewer is the main tool used in windows to view logs. You can browse logs by category, filter events, view structured event details, and correlate events by time and source. 
 
+-----
+
+### Who controls what gets logged?
+
+What events (including the level of detail and for how long logs are retained) is controlled by the administrators looking at security policies, group policies, application configurationsm and system audit settings.
+
+
+
