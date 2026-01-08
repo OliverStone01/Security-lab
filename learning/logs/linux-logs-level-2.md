@@ -4,7 +4,23 @@ This file explains how Linux systems record `Authentication` related activity. A
 
 - Logging into the console.
 - Logging in using SSH.
-- Using `sudo` commands.
-- Switching users using `su`.
 - Authenticating users for services.
+
+-----
+
+### Authentication vs authorisation
+
+- **Authentication** is the process of proving who you are. For example, entering a password.
+- **Authorisation** is the process of checking is you are allowed to have access to or edit something. For example, being allowed to run `sudo` commands.
+
+-----
+
+### Where do authentication logs live?
+
+Authentication events are commonly recorded in:
+- `/var/log/auth.log`
+- `/var/log/secure`
+- The systemd journal (`journalctl`)
+
+
 
