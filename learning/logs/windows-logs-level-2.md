@@ -88,11 +88,3 @@ This is mainly used in enterprise and SOC environments.
 - Are multiple hosts affected by the same issue?
 
 -----
-
-
-
-
-
-
-
-
