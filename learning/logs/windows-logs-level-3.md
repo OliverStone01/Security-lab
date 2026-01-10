@@ -18,7 +18,7 @@ An authentication event log is a type of log that is writen everytime the device
 2. Expand `Windows Logs`.
 3. Select `Security`.
 
-<img alt="Security logs" src="images/event-viewer-security.png" width=200px>
+<img alt="Security logs" src="images/Event-viewer-security.png" width=200px>
 
 Under `Security` you can monitor all authentication logs that have taken place on the machine up until you opened the application. You can select `refresh` from tool bar to gather newer logs (if there are any).
 
