@@ -27,25 +27,36 @@ An authentication event log is a type of log that is writen everytime the device
       - Tick `Success`.
       - Tick `Failure`.
       - Apply changes.
+
+<img alt="Audit Credential Validation" src="images/audit-credential-validation.png" width=150px>
      
 7. Select `Audit Other Account Logon Events`.
     - Configure the following audit events:
       - Tick `Success`.
       - Tick `Failure`.
       - Apply changes.
+
+<img alt="Audit Other Account Logon Events" src="images/audit-other-account-logon-events" width=2200px>
      
 8. Select `Logon/Logoff`.
+
+<img alt="Logon/Logoff menu" src="images/local-security-policy-account-logon.png" width=400px>
+
 9. Select `Audit Logon`.
     - Configure the following audit events:
       - Tick `Success`.
       - Tick `Failure`.
       - Apply changes.
      
+<img alt="Audit Logon" src="images/audit-other-account-logon-events" width=2200px>
+     
 10. Select `Audit Other Logon/Logoff Events`.
     - Configure the following audit events:
       - Tick `Success`.
       - Tick `Failure`.
       - Apply changes.
+
+<img alt="Audit Other Logon/Logoff Events" src="images/audit-other-account-logon-events" width=2200px>
      
 11. Close `Local Security Policy (secpol.msc)`.
 12. Restart the system.
