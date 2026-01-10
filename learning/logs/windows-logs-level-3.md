@@ -36,7 +36,7 @@ An authentication event log is a type of log that is writen everytime the device
       - Tick `Failure`.
       - Apply changes.
 
-<img alt="Audit Other Account Logon Events" src="images/audit-other-account-logon-events.png" width=2200px>
+<img alt="Audit Other Account Logon Events" src="images/audit-other-account-logon-events.png" width=150px>
      
 8. Select `Logon/Logoff`.
 
@@ -48,7 +48,7 @@ An authentication event log is a type of log that is writen everytime the device
       - Tick `Failure`.
       - Apply changes.
      
-<img alt="Audit Logon" src="images/audit-logon.png" width=2200px>
+<img alt="Audit Logon" src="images/audit-logon.png" width=150px>
      
 10. Select `Audit Other Logon/Logoff Events`.
     - Configure the following audit events:
@@ -56,7 +56,7 @@ An authentication event log is a type of log that is writen everytime the device
       - Tick `Failure`.
       - Apply changes.
 
-<img alt="Audit Other Logon/Logoff Events" src="images/audit-other-logon-logoff-events.png" width=2200px>
+<img alt="Audit Other Logon/Logoff Events" src="images/audit-other-logon-logoff-events.png" width=150px>
      
 11. Close `Local Security Policy (secpol.msc)`.
 12. Restart the system.
