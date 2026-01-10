@@ -12,6 +12,48 @@ An authentication event log is a type of log that is writen everytime the device
 
 -----
 
+### Where do you look for authentication logs?
+
+1. Open the `Event Viewer` application.
+2. Expand `Windows Logs`.
+3. Select `Security`.
+
+<img alt="Security logs" src="" width=300px>
+
+Under `Security` you can monitor all authentication logs that have taken place on the machine up until you opened the application. You can select `refresh` from tool bar to gather newer logs (if there are any).
+
+-----
+
+### What does a `successful login event` look like?
+
+Successful login Event ID = 4624.
+
+This event means that Windows accepted credentials used to login and created a session. From this event, we can see who logged in, where they logged in, and how they logged in.
+
+<img alt="Successful-login-log" src="" width=400px>
+
+-----
+
+### What does a `failed login event` look like?
+
+Failed login Event ID = 4625.
+
+This event means that the credentials used to sign in were rejected by the system. From this event, we can see if the username was wrong, if the password wrong, and where the attempt come from.
+
+<img alt="Failed-login-log" src="" width=400px>
+
+-----
+
+### What does a `Account Lockout event` look like?
+
+Account Lockout event ID = 4740.
+
+This even means that the account is locked after repeated authentication failures. By default, the amount of fails is set to 10 before lockout. You can change this number from the **Local Security Policy**.
+
+This event allows us to see which account was locked, when it happened, and what system triggered the lockout.
+
+-----
+
 ### Setting up incorrect password rule using Local Security Policy (`secpol.msc`) for Windows Pro:
 
 1. Logon to Windows Pro system.
