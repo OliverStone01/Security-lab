@@ -18,7 +18,7 @@ An authentication event log is a type of log that is writen everytime the device
 2. Expand `Windows Logs`.
 3. Select `Security`.
 
-<img alt="Security logs" src="" width=300px>
+<img alt="Security logs" src="images//event-viewer-security.png" width=200px>
 
 Under `Security` you can monitor all authentication logs that have taken place on the machine up until you opened the application. You can select `refresh` from tool bar to gather newer logs (if there are any).
 
@@ -30,7 +30,7 @@ Successful login Event ID = 4624.
 
 This event means that Windows accepted credentials used to login and created a session. From this event, we can see who logged in, where they logged in, and how they logged in.
 
-<img alt="Successful-login-log" src="" width=400px>
+<img alt="Successful-login-log" src="images/successful-logon.png" width=400px>
 
 -----
 
@@ -40,7 +40,7 @@ Failed login Event ID = 4625.
 
 This event means that the credentials used to sign in were rejected by the system. From this event, we can see if the username was wrong, if the password wrong, and where the attempt come from.
 
-<img alt="Failed-login-log" src="" width=400px>
+<img alt="Failed-login-log" src="images/failed-logon.png" width=400px>
 
 -----
 
