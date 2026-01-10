@@ -16,38 +16,41 @@ An authentication event log is a type of log that is writen everytime the device
 
 1. Logon to Windows Pro system.
 2. Open `Local Security Policy (secpol.msc)` using `run` (`Win + R -> secpol.msc`).
-3. Expand `Advanced Audit Policy Configuration`.
-4. Expand `System Audit Policies`.
-5. Select `Account Logon`.
-6. Select `Audit Credential Validation`.
+
+<img alt="Local Security Policy" src="images/">
+
+4. Expand `Advanced Audit Policy Configuration`.
+5. Expand `System Audit Policies`.
+6. Select `Account Logon`.
+7. Select `Audit Credential Validation`.
     - Configure the following audit events:
       - Tick `Success`.
       - Tick `Failure`.
       - Apply changes.
      
-7. Select `Audit Other Account Logon Events`.
+8. Select `Audit Other Account Logon Events`.
     - Configure the following audit events:
       - Tick `Success`.
       - Tick `Failure`.
       - Apply changes.
      
-8. Select `Logon/Logoff`.
-9. Select `Audit Logon`.
+9. Select `Logon/Logoff`.
+10. Select `Audit Logon`.
     - Configure the following audit events:
       - Tick `Success`.
       - Tick `Failure`.
       - Apply changes.
      
-10. Select `Audit Other Logon/Logoff Events`.
+11. Select `Audit Other Logon/Logoff Events`.
     - Configure the following audit events:
       - Tick `Success`.
       - Tick `Failure`.
       - Apply changes.
      
-11. Close `Local Security Policy (secpol.msc)`.
-12. Restart the system.
-13. Once you are propted to sign back in, input an incorrect password.
-14. Log back in and open `Event viewer` and check for `invalid login logs`.
+12. Close `Local Security Policy (secpol.msc)`.
+13. Restart the system.
+14. Once you are propted to sign back in, input an incorrect password.
+15. Log back in and open `Event viewer` and check for `invalid login logs`.
 
 -----
 
