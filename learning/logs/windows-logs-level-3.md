@@ -20,7 +20,7 @@ An authentication event log is a type of log that is writen everytime the device
 4. Expand `System Audit Policies`.
 5. Select `Account Logon`.
 
-<img alt="Account Logon" src="learning/images/local-security-policy-account-logon.png">
+<img alt="Account Logon" src="images/local-security-policy-account-logon.png" width=400px>
 
 6. Select `Audit Credential Validation`.
     - Configure the following audit events:
