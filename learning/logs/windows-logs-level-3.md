@@ -1,6 +1,6 @@
 # Windows logs - level 3: Authentication event logs
 
-This file documents how authentication logs behaves on Windows. While studying, I built two virtual machine to test my understanding. The first machine is running **Windows 11 Home** to simulate a personal device. For the second machine, i'm running **Windows 11 Pro** 
+This file documents how authentication logs behave on Windows. While studying, I built two virtual machine to test my understanding. The first machine is running **Windows 11 Home** to simulate a personal device. For the second machine, i'm running **Windows 11 Pro** 
 
 > For more information on how to setup Windows virtual machines, check out my [Windows VM setup repository](https://github.com/OliverStone01/Security-lab/blob/main/setup/windows-11-vm-setup.md)
 
@@ -8,7 +8,7 @@ This file documents how authentication logs behaves on Windows. While studying, 
 
 ### what is an authentication event log?
 
-An authentication event log is a type of log that is writen everytime the device checks the user or service is who they say they are. You can adjust the rules that tell the system when to record these logs by using:
+An authentication event log is a type of log that is written every time the device checks the user or service is who they say they are. You can adjust the rules that tell the system when to record these logs by using:
 
 - `secpol.msc` for Windows Pro
 - `auditpol` for Windows Home.
@@ -23,7 +23,7 @@ An authentication event log is a type of log that is writen everytime the device
 
 <img alt="Security logs" src="images/Event-viewer-security.png" width=200px>
 
-Under `Security` you can monitor all authentication logs that have taken place on the machine up until you opened the application. You can select `refresh` from tool bar to gather newer logs (if there are any).
+Under `Security` you can monitor all authentication logs that have taken place on the machine up until you opened the application. You can select `refresh` from toolbar to gather newer logs (if there are any).
 
 -----
 
@@ -41,7 +41,7 @@ This event means that Windows accepted credentials used to login and created a s
 
 Failed login Event ID = 4625.
 
-This event means that the credentials used to sign in were rejected by the system. From this event, we can see if the username was wrong, if the password wrong, and where the attempt come from.
+This event means that the credentials used to sign in were rejected by the system. From this event, we can see if the username was wrong, if the password wrong, and where the attempt came from.
 
 <img alt="Failed-login-log" src="images/failed-logon.png" width=400px>
 
@@ -51,7 +51,7 @@ This event means that the credentials used to sign in were rejected by the syste
 
 Account Lockout event ID = 4740.
 
-This even means that the account is locked after repeated authentication failures. By default, the amount of fails is set to 10 before lockout. You can change this number from the **Local Security Policy**.
+This event means that the account is locked after repeated authentication failures. By default, the amount of failures is set to 10 before lockout. You can change this number from the **Local Security Policy**.
 
 This event allows us to see which account was locked, when it happened, and what system triggered the lockout.
 
@@ -61,7 +61,7 @@ This event allows us to see which account was locked, when it happened, and what
 
 Windows home uses simplified audit policies as this type of device is likely to be used in a home environment. Recording these logs by default would take up storage for something a typical user is unlikely to look at. Windows home will lock the device after 10 invalid logon attempts by default to prevent brute force attacks.
 
-Windows Pro is typically used in a professional environment where all systems are monitored by the SOC team. For this reason, Windows Pro makes it easier to adjust the devices logs for better monitoring and to for later investigations. In this type of environment, visability is more important than storage.
+Windows Pro is typically used in a professional environment where all systems are monitored by the SOC team. For this reason, Windows Pro makes it easier to adjust the devices logs for better monitoring and to for later investigations. In this type of environment, visibility is more important than storage.
 
 -----
 
@@ -113,7 +113,7 @@ Windows Pro is typically used in a professional environment where all systems ar
      
 11. Close `Local Security Policy (secpol.msc)`.
 12. Restart the system.
-13. Once you are propted to sign back in, input an incorrect password.
+13. Once you are prompted to sign back in, input an incorrect password.
 14. Log back in and open `Event viewer` and check for `invalid login logs`.
 
 -----
