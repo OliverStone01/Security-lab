@@ -54,6 +54,14 @@ This event allows us to see which account was locked, when it happened, and what
 
 -----
 
+### Why does Windows home use a different setup method than Windows Pro?
+
+Windows home uses simplified audit policies as this type of device is likely to be used in a home environment. Recording these logs by default would take up storage for something a typical user is unlikely to look at. Windows home will lock the device after 10 invalid logon attempts by default to prevent brute force attacks.
+
+Windows Pro is typically used in a professional environment where all systems are monitored by the SOC team. For this reason, Windows Pro makes it easier to adjust the devices logs for better monitoring and to for later investigations. In this type of environment, visability is more important than storage.
+
+-----
+
 ### Setting up incorrect password rule using Local Security Policy (`secpol.msc`) for Windows Pro:
 
 1. Logon to Windows Pro system.
@@ -107,7 +115,24 @@ This event allows us to see which account was locked, when it happened, and what
 
 -----
 
+### Setting up incorrect password rule using `auditpol` for Windows home:
 
+1. Logon to Windows Home system.
+2. Open `Terminal`.
+3. Run the following commands:
+```
+$ auditpol /set /subcategory:"Logon" /failure:enable
+
+$ auditpol /set /subcategory:"Other Logon/Logoff Events" /success:enable
+
+$ auditpol /set /subcategory:"Other Logon/Logoff Events" /failure:enable
+```
+
+4. Confirm the changes by running the following command:
+```
+$ auditpol /get /category:"Logon/Logoff"
+```
+5. Check for `Success and Failure` under `Logon` and `Other Logon/Logoff Events`.
 
 
 
