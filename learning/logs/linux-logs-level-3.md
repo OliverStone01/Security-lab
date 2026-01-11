@@ -55,11 +55,23 @@ $ journalctl | grep pam
 
 ### Identifying successful authentication events
 
-Linux prioritises session tacking over password attempts. This is to prevent credential exposure and to reduce noise. For this reason, a successful authentication event is recorded when a successful login occures rather than a correct or incorrect password.
+Linux prioritises session tacking over password attempts. This is to prevent credential exposure and to reduce noise. For this reason, a successful authentication event is recorded when a successful login occures rather than a correct or incorrect password attempts.
 
+For checking successful logons, run the command:
+```
+$ journalctl | grep pam
+```
 
+Example of successful login log:
+```
+Jan 01 00:00:00 <USERNAME> lightdm[32384]: pam_unix(lightdm:session): session opened for user <USERNAME>(uid=1000) by <USERNAME>(uid=0)
+```
 
+Cron is a scheduler that runs commands or scripts automatically at set times or intervals.  
 
+Lightdm is a display manager that handles the graphical login screen and starts the users session.
+
+-----
 
 
 
