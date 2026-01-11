@@ -8,7 +8,10 @@ This file documents how authentication logs behaves on Windows. While studying, 
 
 ### what is an authentication event log?
 
-An authentication event log is a type of log that is writen everytime the device checks the user or service is who they say they are. You can adjust the rules that tell the system when to record these logs by using `secpol.msc` for Windows Pro and `auditpol` for Windows Home.
+An authentication event log is a type of log that is writen everytime the device checks the user or service is who they say they are. You can adjust the rules that tell the system when to record these logs by using:
+
+- `secpol.msc` for Windows Pro
+- `auditpol` for Windows Home.
 
 -----
 
@@ -134,12 +137,9 @@ $ auditpol /get /category:"Logon/Logoff"
 ```
 5. Check for `Success and Failure` under `Logon` and `Other Logon/Logoff Events`.
 
+-----
 
-
-
-
-
-
+This studying and testing showed me that you should not assume logs are setup by default and set up steps may change depending on what OS is being used.
 
 
 
