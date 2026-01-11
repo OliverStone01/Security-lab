@@ -1,8 +1,8 @@
 # Linux logs - level 3: Authentication logs in practice.
 
-This file documents how authentication logs work in a Linux environment. For testing, I build a Kali Linux virtual machine using UTM as my virtualiser.
+This file documents how authentication logs work in a Linux environment. For testing, I built a Kali Linux virtual machine using UTM as my virtualiser.
 
-> For more information on how to setup a Kali Linux virtual machines, check out my [Linux VM setup repository](https://github.com/OliverStone01/Security-lab/blob/main/setup/kali-linux-vm-setup.md)
+> For more information on how to set up a Kali Linux virtual machines, check out my [Linux VM setup repository](https://github.com/OliverStone01/Security-lab/blob/main/setup/kali-linux-vm-setup.md)
 
 -----
 
@@ -10,7 +10,7 @@ This file documents how authentication logs work in a Linux environment. For tes
 
 An authentication event log is a type of log that is written every time the device checks the user or service is who they say they are. Some examples include:
 - Console logins
-- SSH logibs
+- SSH logins
 - Sudo authentication
 
 -----
@@ -53,9 +53,9 @@ $ journalctl | grep pam
 
 -----
 
-### Identifying successful authentication events
+### Successful authentication events
 
-Linux prioritises session tacking over password attempts. This is to prevent credential exposure and to reduce noise. For this reason, a successful authentication event is recorded when a successful login occures rather than a correct or incorrect password attempts.
+Linux prioritises session tracking over loging correct passwords. This is to prevent credential exposure and to reduce noise. For this reason, a successful authentication event is recorded when a successful login occurs rather than a correct password.
 
 For checking successful logons, run the command:
 ```
@@ -70,6 +70,20 @@ Jan 01 00:00:00 <USERNAME> lightdm[32384]: pam_unix(lightdm:session): session op
 Cron is a scheduler that runs commands or scripts automatically at set times or intervals.  
 
 Lightdm is a display manager that handles the graphical login screen and starts the users session.
+
+-----
+
+### Failed authentication events
+
+To see failed password attempt logs, you can use the following command:
+```
+$ journalctl | grep failed
+```
+
+This will then display all failed password atempts like this:
+```
+Jan 01 00:00:00 <USERNAME> unix-chkpwd[62795]: password check failed for user (<USERNAME>)
+```
 
 -----
 
