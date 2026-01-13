@@ -1,6 +1,6 @@
 # Bruteforce investigation.
 
-This file shows how I created and investigated bruteforce attacks using **Metasploit** on a Kali linux attack virtual machine to attack a vulnerable linux virtual machine and a vulnerable Windows virtual machine. I recreated this type of attack to bettwe understand how logs can be used to identify a system that has been attacked.
+This file shows how I created and investigated bruteforce attacks using **Metasploit** on a Kali linux attack virtual machine to attack a Linux virtual machine and a Windows virtual machine. I recreated this type of attack to bettwe understand how logs can be used to identify a system that has been attacked.
 
 **What is a bruteforce attack?**  
 A bruteforce attack is when an attacker tries lots of diffrent passwords to try get access to a machine. These passwords are usualy a list of the most common passwords or passwords taken from a data breach (credential stuffing) in hopes that the user has used a simple password or has resused there password across diffrent sites.
@@ -19,8 +19,28 @@ We also need to set the machine to lockdown (either for a set period of time or 
 
 -----
 
-### How I recreated a bruteforce attack:
-To recreate a bruteforce attack, 
+### Attacking Linux machine:
+
+**Attack machine:**  
+**Operating System:** Kali Linux 10.4  
+**Specific Applications:** Metasploit framework  
+
+**Linux vulnerable machine:**  
+**Operating System:** Kali Linux 10.4  
+
+
+1. Turn on `ssh` on the vulnerable machine:
+```
+$ sudo systemctl start ssh
+$ sudo systemctl enable ssh
+```
+
+2. On the attack machine, 
+
+
+
+
+
 
 
 
