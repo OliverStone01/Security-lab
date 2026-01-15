@@ -1,6 +1,6 @@
-# Bruteforce investigation.
+# Linux Bruteforce investigation.
 
-This file shows how I created and investigated bruteforce attacks using **Metasploit** on a Kali linux attack virtual machine to attack a Linux virtual machine and a Windows virtual machine. I recreated this type of attack to bettwe understand how logs can be used to identify a system that has been attacked.
+This file shows how I created and investigated a bruteforce attack using **Metasploit** on a Kali linux attack virtual machine to attack my Raspberry pi running Linux. I recreated this type of attack to get a better understand how logs can be used to identify a system that has been attacked.
 
 **What is a bruteforce attack?**  
 A bruteforce attack is when an attacker tries lots of diffrent passwords to try get access to a machine. These passwords are usualy a list of the most common passwords or passwords taken from a data breach (credential stuffing) in hopes that the user has used a simple password or has resused there password across diffrent sites.
