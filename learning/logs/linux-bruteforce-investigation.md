@@ -24,12 +24,12 @@ SSH (Secure Shell) is a "cryptographic network protocol" that is used to get rem
 ### My setup:
 
 **Attack machine:**  
-**Operating System:** Kali Linux 10.4  
-**Specific Applications:** Metasploit framework  
+Operating System: Kali Linux 10.4  
+Specific Applications: Metasploit framework  
 
 **Linux vulnerable machine:**  
-**Operating System:** Raspberry Pi OS
-**Specific tools enabled:** SSH (Password authentication)
+Operating System: Raspberry Pi OS  
+Specific tools enabled: SSH (Password authentication)
 
 
 For more information on how I created my attack machine, see my **Kali Linux Attack VM** repository [here]().
@@ -38,7 +38,7 @@ For more information on how I created my attack machine, see my **Kali Linux Att
 
 ### Setting up my victim device.
 
-Before attacking the device, I first made sure to activate and connect to the device via SSH to check the device was operating correctly.
+Before attacking the victim device, I first made sure to activate and connect to the device via SSH to check the device was operating correctly.
 
 > Before connecting, I made sure to enter an incorrect password so I can check failed authentication logs are being recorded.
 
