@@ -80,7 +80,7 @@ Once I had the IP range, I could use nmap to scan the range for devices that are
 $ nmap -p 22 x.x.x.x/x
 ```
 
-<img alt="nmap scan for port 22" src="/learning/logs/images/nmap-scan-results.png" width=300px>
+<img alt="nmap scan for port 22" src="/learning/logs/images/nmap-scan-results.png" width=400px>
 
 From the results of the scan, I could see my Rasperry Pi's IP address and see that port 22 is open. Now I can begin to attack the device.
 
@@ -137,13 +137,13 @@ msf6 > auxiliary(scanner/ssh/ssh_login) > run
 
 Metasploit will now attempt each password and create a SSH session on the device:  
 
-<img alt="Metasploit running bruteforce attack" src="/learning/logs/images/metasploit-bruteforce-running.png" width=300px>
+<img alt="Metasploit running bruteforce attack" src="/learning/logs/images/metasploit-bruteforce-running.png" width=500px>
 
 If the bruteforce was successful, you will see a session has been created. To view your sessions, you can run `sessions`:
 ```
 msf6 > auxiliary(scanner/ssh/ssh_login) > sessions
 ```
-<img alt="metasploit sessions" src="/learning/logs/images/metasploit-sessions.png" width=300px>
+<img alt="metasploit sessions" src="/learning/logs/images/metasploit-sessions.png" width=600px>
 
 To get access to the session, you can use `sessions -i (Session number)`:
 ```
