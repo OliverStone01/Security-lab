@@ -74,7 +74,7 @@ $ ip a
 
 <img alt="ip a scan" src="" width=300px>
 
-To get the IP range, we need to look under `eth0` for `inet x.x.x.x/x`
+To get the IP range, you need to look under `eth0` for `inet x.x.x.x/x`
 
 > - `eth` = ethernet, `0` = first, `eth0` = the first ethernet interface.
 > - `inet` - internet protocol (IPv4)
@@ -86,7 +86,7 @@ $ nmap -p 22 x.x.x.x/x
 
 <img alt="nmap scan for port 22" src="" width=300px>
 
-From the results of the scan, I can see my Rasperry Pi's IP address and see that port 22 is open. Now I can begin to attack the device.
+From the results of the scan, I could see my Rasperry Pi's IP address and see that port 22 is open. Now I can begin to attack the device.
 
 -----
 
@@ -139,10 +139,37 @@ Once all options have been set, run the Bruteforce attack:
 msf6 > auxiliary(scanner/ssh/ssh_login) > run
 ```
 
+Metasploit will now attempt each password and create a SSH session on the device:
+<img alt="Metasploit running bruteforce attack" src="" width=300px>
+
+If the bruteforce was successful, you will see a session has been created. To view your sessions, you can run `sessions`:
+```
+msf6 > auxiliary(scanner/ssh/ssh_login) > sessions
+```
+<img alt="metasploit sessions" src="" width=300px>
+
+To get access to the session, you can use `sessions -i (Session number)`:
+```
+msf6 > auxiliary(scanner/ssh/ssh_login) > sessions -i 1
+```
+
+To quit your session, run `exit`
+
 -----
 
 ### What the logs showed:
 
+To get the logs, I accessed my vulnerable machine and checked the latest journal logs:
+```
+$ journalctl -r
+```
+
+Here are the logs:
+<img alt="Post Bruteforce logs" src="" width=300px>
+
+As we can see, the logs correctly identified 9 failed password attempts and then 1 successful login attempt. By looking at the times between the logs, this was clearly a bruteforce attack.
+
+-----
 
 
 
