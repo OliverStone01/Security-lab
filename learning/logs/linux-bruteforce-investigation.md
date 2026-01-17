@@ -163,7 +163,7 @@ $ journalctl -r
 
 Here are the logs:  
 
-<img alt="Post Bruteforce logs" src="/learning/logs/images/logs-from-victim-machine.png" width=300px>
+<img alt="Post Bruteforce logs" src="/learning/logs/images/logs-from-victim-machine.png" width=600px>
 
 As we can see, the logs correctly identified 9 failed password attempts and then 1 successful login attempt. By looking at the times between the logs, this was clearly a bruteforce attack.
 
