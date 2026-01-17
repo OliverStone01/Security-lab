@@ -36,7 +36,7 @@ For more information on how I created my attack machine, see my **Kali Linux Att
 
 To be able to access my network via my attack machine, I had to change my network settings to `bridged`.
 
-<img alt="Bridged network" src="/learning/logs/images/bridged network.png">
+<img alt="Bridged network" src="/learning/logs/images/bridged network.png" width=500px>
 
 -----
 
