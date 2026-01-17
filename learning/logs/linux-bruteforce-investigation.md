@@ -3,7 +3,7 @@
 This file shows how I recreated and investigated a brute force attack using **Metasploit** on a Kali linux virtual machine to attack my Raspberry Pi running Raspberry Pi OS (Linux Debian Trixie with Raspberry Pi Desktop) using SSH. I recreated this type of attack to get a better understanding of how logs can be used to identify if a system has been attacked.
 
 **What is a brute force attack?**  
-A brute force attack is when an attacker attempts to get access to a machine by testing different passwords. These passwords are usualy a list of the most common passwords or passwords taken from a data breach (credential stuffing) in hopes that the user has used a simple password or has reused their password across different sites. These passwords are usualy tested automatically with a script or tool such as **metasploit** or **hydra**.
+A brute force attack is when an attacker attempts to get access to a machine by testing different passwords. These passwords are usually a list of the most common passwords or passwords taken from a data breach (credential stuffing) in hopes that the user has used a simple password or has reused their password across different sites. These passwords are usually tested automatically with a script or tool such as **metasploit** or **hydra**.
 
 **How do you identify a brute force attack?**  
 Repeated failed authentication attempts in a short period of time for the same user.
@@ -173,7 +173,7 @@ As we can see, the logs correctly identified 9 failed password attempts and then
 
 ### How do SOC teams monitor these attacks?
 
-SOC teams would set these threasholds to detect and raise an alert when:
+SOC teams would set these thresholds to detect and raise an alert when:
 - X failed login attempts in Y seconds.
 - Failed login attempts came from the same source IP address.
 - Failed login attempts used the same username
