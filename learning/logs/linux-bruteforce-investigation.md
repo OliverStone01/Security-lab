@@ -119,9 +119,10 @@ msf6 > auxiliary(scanner/ssh/ssh_login) > set RHOSTS x.x.x.x
 msf6 > auxiliary(scanner/ssh/ssh_login) > set USERNAME xxxxx
 ```
 
-- Set the password list to use (PASS_LIST)
-
-`RHOSTS`, `USERNAME`, `PASS_FILE`
+- Set the password list to use (PASS_LIST):
+```
+msf6 > auxiliary(scanner/ssh/ssh_login) >
+```
 
 
 
