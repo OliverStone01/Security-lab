@@ -143,7 +143,7 @@ If the bruteforce was successful, you will see a session has been created. To vi
 ```
 msf6 > auxiliary(scanner/ssh/ssh_login) > sessions
 ```
-<img alt="metasploit sessions" src="" width=300px>
+<img alt="metasploit sessions" src="/learning/logs/images/metasploit-sessions.png" width=300px>
 
 To get access to the session, you can use `sessions -i (Session number)`:
 ```
@@ -163,7 +163,7 @@ $ journalctl -r
 
 Here are the logs:  
 
-<img alt="Post Bruteforce logs" src="" width=300px>
+<img alt="Post Bruteforce logs" src="/learning/logs/images/logs-from-victim-machine.png" width=300px>
 
 As we can see, the logs correctly identified 9 failed password attempts and then 1 successful login attempt. By looking at the times between the logs, this was clearly a bruteforce attack.
 
