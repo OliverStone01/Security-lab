@@ -139,7 +139,8 @@ Once all options have been set, run the Bruteforce attack:
 msf6 > auxiliary(scanner/ssh/ssh_login) > run
 ```
 
-Metasploit will now attempt each password and create a SSH session on the device:
+Metasploit will now attempt each password and create a SSH session on the device:  
+
 <img alt="Metasploit running bruteforce attack" src="" width=300px>
 
 If the bruteforce was successful, you will see a session has been created. To view your sessions, you can run `sessions`:
