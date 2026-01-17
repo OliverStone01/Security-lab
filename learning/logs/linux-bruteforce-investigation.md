@@ -33,6 +33,11 @@ Specific tools enabled: SSH (Password authentication)
 
 
 For more information on how I created my attack machine, see my **Kali Linux Attack VM** repository [here]().
+
+To be able to access my network via my attack machine, I had to change my network settings to `bridged`.
+
+<img alt="Bridged network" src="/learning/logs/images/bridged network.png">
+
 -----
 
 ### Creating my password list
@@ -63,7 +68,7 @@ Before I could attack my victim device via SSH, I first needed to find the devic
 $ ip a
 ```
 
-<img alt="ip a scan" src="" width=300px>
+<img alt="ip a scan" src="/learning/logs/images/ip a scan.png" width=300px>
 
 To get the IP range, you need to look under `eth0` for `inet x.x.x.x/x`
 
