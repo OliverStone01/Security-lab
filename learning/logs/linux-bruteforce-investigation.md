@@ -33,15 +33,6 @@ Specific tools enabled: SSH (Password authentication)
 
 
 For more information on how I created my attack machine, see my **Kali Linux Attack VM** repository [here]().
-
-Before attacking the victim device, I first made sure to activate and connect to the device via SSH to check the device was operating correctly.
-
-> Before connecting, I made sure to enter an incorrect password so I can check failed authentication logs are being recorded.
-
-Once I was on the device, I checked the authentication logs for one failed authentication log and 1 successful authentication log.
-
-<img alt="Successful and failed authenitication logs" src="" width=200px>
-
 -----
 
 ### Creating my password list
