@@ -68,7 +68,7 @@ Before I could attack my victim device via SSH, I first needed to find the devic
 $ ip a
 ```
 
-<img alt="ip a scan" src="/learning/logs/images/ip a scan.png" width=300px>
+<img alt="ip a scan" src="/learning/logs/images/ip a scan.png" width=600px>
 
 To get the IP range, you need to look under `eth0` for `inet x.x.x.x/x`
 
