@@ -50,7 +50,18 @@ Once I was on the device, I checked the authentication logs for one failed authe
 
 ### Reconnaissance
 
-In this attack, I wanted to simulate a threat actor who only has access to my network. What this means is in order for me to attack the victim device, I first need to find the device on the network. To do this, I am using `
+> I had to change my VM network settings to bridged to be able to scan my own network.
+
+Before I could attack my victim machine, I first needed to find the device on my network. To do this, I used `arp-scan` to capture all the device on my network:
+```
+$ sudo arp-scan --localnet
+```
+The reason I chose to use `arp-scan` is because I could use `--localnetwork` to scan the network without the need to figure out what IP range is available.
+
+From there I could check each device until I came accross my Raspberry Pi using `nmap` to check for an open port on port 22 (the common SSH port):
+```
+$ nmap -p 22 x.x.x.x
+```
 
 
 
