@@ -20,4 +20,4 @@ $ grep -i FLAG server.log
 
 <img alt="grep flag search" src="" width=400px>
 
-From here, I could peice together the flag which was `picoCTF{us3y0urlinux_skills_cedfa5fb}`.
+From here, I could peice together the flag which was `picoCTF{us3_y0urlinux_sk1lls_cedfa5fb}`.
