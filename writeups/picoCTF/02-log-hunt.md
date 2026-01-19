@@ -21,3 +21,9 @@ $ grep -i FLAG server.log
 <img alt="grep flag search" src="/writeups/picoCTF/images/grep-flag-search.png" width=400px>
 
 From here, I could peice together the flag which was `picoCTF{us3_y0urlinux_sk1lls_cedfa5fb}`.
+
+-----
+
+What did I learn?
+
+This CTF taught me that you can use `grep` on logs to search for specific terms.
