@@ -9,7 +9,7 @@ I first downloaded the image to my attack VM and then opened the document to che
 After checking the image, I decided to check the image metadata using the `file` command:
 
 ```
-$ file img.png
+$ file img.JPG
 ```
 
 <img alt="img metadata" src="/writeups/picoCTF/images/file-scan.png" width=600px>
@@ -33,7 +33,7 @@ After decoding the message, I begun focusing on Steganography. I loaded a termin
 After learning how the tool works, I decided to run `info` on the image to see what was being hidden:
 
 ```
-$ steghold -info img.jpg
+$ steghold -info img.JPG
 ```
 
 <img alt="steghold info" src="/writeups/picoCTF/images/steghide-info.png" width=400px>
