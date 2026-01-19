@@ -36,7 +36,7 @@ After learning how the tool works, I decided to run `info` on the image to see w
 $ steghold -info img.jpg
 ```
 
-<img alt="steghold info" src="/writeups/picoCTF/images/steghide-info.png" width=300px>
+<img alt="steghold info" src="/writeups/picoCTF/images/steghide-info.png" width=400px>
 
 When I was asked for a passphrase, I entered the phrase found in the second base64 check `pAzzword`.
 
@@ -46,11 +46,11 @@ This scan revealed a hidden text file called `flag.txt`. I then used the extract
 $ steghide extract -sf img.txt
 ```
 
-<img alt="extracting file using steghide" src="/writeups/picoCTF/images/steghide-extract.png">
+<img alt="extracting file using steghide" src="/writeups/picoCTF/images/steghide-extract.png" width=400px>
 
 Once the file was extracted, I used `cat` to reveal the flag: `picoCTF{h1dd3n_1n_1m4g3_e7f5b969}`.
 
-<img alt="final flag" src="/writeups/picoCTF/images/final-flag.png">
+<img alt="final flag" src="/writeups/picoCTF/images/final-flag.png" width=400px>
 
 
 -----
