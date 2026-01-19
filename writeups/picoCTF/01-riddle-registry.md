@@ -20,3 +20,9 @@ Here was the output:
 <img alt="Output of decoding base64" src="/writeups/picoCTF/images/base64-output.png" width=600px>
 
 This output is the flag to complete this challenge.
+
+-----
+
+What did I learn?
+
+This CTF instilled the diffrence between decryption and decoding.
