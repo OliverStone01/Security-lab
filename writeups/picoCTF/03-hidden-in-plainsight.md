@@ -1,6 +1,6 @@
-# picoCTF - Hidden in plainsight
+# picoCTF - Hidden in plain sight
 
-In this CTF, you are give a JPG image in which the flag is hidden.
+In this CTF, you are given a JPG image in which the flag is hidden.
 
 I first downloaded the image to my attack VM and then opened the document to check the image:
 
@@ -28,12 +28,12 @@ I could see that the second part of the message was still encoded so I decided t
 
 This revealed the string `pAzzword`.
 
-After decoding the message, I begun focusing on Steganography. I loaded a terminal and looked at the documentation using `steghide --help`.
+After decoding the message, I began focusing on Steganography. I loaded a terminal and looked at the documentation using `steghide --help`.
 
 After learning how the tool works, I decided to run `info` on the image to see what was being hidden:
 
 ```
-$ steghold -info img.JPG
+$ steghild -info img.JPG
 ```
 
 <img alt="steghold info" src="/writeups/picoCTF/images/steghide-info.png" width=400px>
