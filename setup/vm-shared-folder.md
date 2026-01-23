@@ -103,7 +103,7 @@ On your Desktop, you will now see a new folder which is linked to your share fol
 > **What this script does:**  
 > The script first checks if the `share` folder exists in the `/mnt` directory. If the folder does not exist, it creates the folder for you. If the folder already exists, the script checks to see if the directory is already being shared. If its not being shared, it mounts (connects) the directory. If it is being shared already, it unmounts (disconnects) the directory.
 >
-> This method means you can toggle between connected and disconnected without needing diffrent scripts or multiple commands.
+> This method means you can toggle between connected and disconnected without needing different scripts or multiple commands.
 
 1. Boot your VM and login.
 2. Once your logged in, you can either download the script from my GitHub [here](https://github.com/OliverStone01/Security-lab/blob/main/tools/custom-tools/toggle-share.sh). Or you can manually follow along below:
