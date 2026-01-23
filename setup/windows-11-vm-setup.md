@@ -111,7 +111,7 @@ Download the latest version of software for your device.
 
 <img alt="Windows first install" src="images/windows-first-install.png" width=300px>
 
-24. Once the first intall has complete, the VM will restart. Terminate your VM before the second install.
+24. Once the first install has complete, the VM will restart. Terminate your VM before the second install.
 
 25. Select your VM in the UTM application.
 26. At the bottom of the information panel on the right, there are two drop downs that say `CD/DVD`. Click the drop down for the .iso file and click `clear`.
@@ -119,7 +119,7 @@ Download the latest version of software for your device.
 
 27. Boot the VM again.
 
-> The second install will now begin. Exepct your VM to restart atleast once.
+> The second install will now begin. Expect your VM to restart at least once.
 
 <img alt="Second install" src="images/windows-second-install.png" width=300px>
 
