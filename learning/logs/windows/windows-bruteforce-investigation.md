@@ -32,3 +32,33 @@ Specific Applications: Metasploit framework
 **Windows vulnerable machine:**  
 Operating System: Windows 10
 Specific tools enabled: SSH (Password authentication)
+
+For more information on how I created my attack machine, see my **Kali Linux Attack VM** repository [here](https://github.com/OliverStone01/Security-lab/blob/main/setup/kali-linux-vm-setup.md).
+
+To be able to access my network via my attack machine, I had to change my network settings to `bridged`.
+
+<img alt="Bridged network" src="/learning/logs/images/bridged network.png" width=500px>
+
+-----
+
+### Creating my password list
+
+On my attack VM, I created a text document with 10 passwords to test (9 of the most used passwords and the correct password).
+
+```
+$ nano ~/passwords.txt
+
+123456
+password
+123456789
+qwerty
+12345
+111111
+123123
+admin
+iloveyou
+***********
+```
+
+-----
+

@@ -33,7 +33,6 @@ Specific Applications: Metasploit framework
 Operating System: Raspberry Pi OS (Linux Debian Trixie with Raspberry Pi Desktop)
 Specific tools enabled: SSH (Password authentication)
 
-
 For more information on how I created my attack machine, see my **Kali Linux Attack VM** repository [here](https://github.com/OliverStone01/Security-lab/blob/main/setup/kali-linux-vm-setup.md).
 
 To be able to access my network via my attack machine, I had to change my network settings to `bridged`.
