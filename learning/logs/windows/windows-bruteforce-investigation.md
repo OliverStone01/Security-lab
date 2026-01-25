@@ -62,3 +62,6 @@ iloveyou
 
 -----
 
+# Setting up the vulnerable device:
+
+To setup the device, I installed a fresh version of Windows 10 onto an old laptop using a Windows 10 USB boot key I made. Once the device was setup, I created a basic local user and activated SSH.
