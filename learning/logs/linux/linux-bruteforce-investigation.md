@@ -14,9 +14,9 @@ A user who has forgotten their password but instead of resetting the password, t
 **How do you prevent brute force attacks?**  
 Configuring the password difficulty rules to prevent users reusing simple passwords. For example, we can configure a password history rule so the user cannot reuse their previous password. We can also configure a rule that requires the user to enter a password that is longer than the standard 8 length password which increases the difficulty of cracking the password.
 
-We also need to configure rate-limiting the machine to lockdown (either for a set period of time or until IT helpdesk unlocks the device) after a set amount of failed authentication attempts. This will restrict the amount of times an attacker can guess the password before being locked out of the device.
+We also need to configure rate-limiting the machine to lock down (either for a set period of time or until IT help desk unlocks the device) after a set amount of failed authentication attempts. This will restrict the amount of times an attacker can guess the password before being locked out of the device.
 
-We can also use MFA (multifactor authentication) to require the user to provide another form of authentication when logging in.
+We can also use MFA (multi-factor authentication) to require the user to provide another form of authentication when logging in.
 
 **What is SSH?**
 SSH (Secure Shell) is a "cryptographic network protocol" that is used to get remote access to a device on a network.
