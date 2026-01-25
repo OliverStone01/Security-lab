@@ -11,4 +11,9 @@ This is a guide on how to setup SSH on Windows 10.
 
 <img alt="Optional features" src="" width=300px>
 
+3. Select **Add a feature**
+4. Look for **OpenSSH server** and install
 
+<img alt="Install OpenSSH server" src="" width=300px>
+
+-----
