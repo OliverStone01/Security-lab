@@ -33,7 +33,7 @@ This is a guide on how to setup SSH on Windows.
 
 ------
 
-**Allow SSH through windows firewall**
+**For Windows 10 - Allow SSH through windows firewall**
 
 1. Open **Windows Defender Firewall**.
 2. Select **Allow an app through firewall**.
@@ -44,3 +44,9 @@ This is a guide on how to setup SSH on Windows.
 <img alt="allow OpenSSH firewall" src="" width=300px>
 
 -----
+
+**For Windows 11 - Check inbound rule for port 22**
+
+1. Open **Windows Defender Firewall**.
+2. Select **Advanced settings**.
+3. Confirm an inbound rule exists for **TCP port 22**.
