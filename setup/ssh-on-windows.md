@@ -9,16 +9,16 @@ This is a guide on how to setup SSH on Windows.
 1. Open **settings**.
 2. Go to **systems** -> **Optional features**.
 
-<img alt="Optional features" src="/setup/images/optional-features.png" width=300px>
+<img alt="Optional features" src="/setup/images/optional-features.png" width=400px>
 
 3. Select **view features**.
 4. Select **See Available Features**
 
-<img alt="See available features" src="/setup/images/see-available-features.png" width=300px>
+<img alt="See available features" src="/setup/images/see-available-features.png" width=400px>
 
 4. Look for or search for **OpenSSH Server** and `Add`.
 
-<img alt="Install OpenSSH server" src="/setup/images/add-ssh-server.png" width=300px>
+<img alt="Install OpenSSH server" src="/setup/images/add-ssh-server.png" width=400px>
 
 -----
 
@@ -36,7 +36,7 @@ This is a guide on how to setup SSH on Windows.
 
 4. Click **Start**.
 
-<img alt="Setting startup option" src="/setup/images/setting-startup.png" width=300px>
+<img alt="Setting startup option" src="/setup/images/setting-startup.png" width=400px>
 
 ------
 
@@ -47,8 +47,6 @@ This is a guide on how to setup SSH on Windows.
 3. Set **OpenSSH Server** to allow on:
     - Private networks
     - Public networks (For lab use only)
-
-<img alt="allow OpenSSH firewall" src="" width=300px>
 
 -----
 
@@ -67,19 +65,19 @@ This is a guide on how to setup SSH on Windows.
 5. Under **Rule Type**:
     - Select **Port**
 
-<img alt="new port rule" src="/setup/images/new-inbound-rule.png" width=300px>
+<img alt="new port rule" src="/setup/images/new-inbound-rule.png" width=400px>
 
 6. Under **Protocol and Ports**:
     - Select **TCP**
     - Select **Specific local ports:**
     - Enter port 22
 
-<img alt="Protocol and ports" src="/setup/images/tcp-22.png" width=300px>
+<img alt="Protocol and ports" src="/setup/images/tcp-22.png" width=400px>
 
 7. Under **Action**:
     - Select **Allow the connection**
 
-<img alt="Action" src="/setup/images/allow-the-connection.png" width=300px>
+<img alt="Action" src="/setup/images/allow-the-connection.png" width=400px>
 
 8. Under Profile:
     - Select **Domain**
