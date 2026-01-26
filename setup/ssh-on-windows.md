@@ -1,6 +1,6 @@
-# Setting up SSH on windows
+# Setting up SSH on Windows
 
-This is a guide on how to setup SSH on Windows 10.
+This is a guide on how to setup SSH on Windows.
 
 -----
 
