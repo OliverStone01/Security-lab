@@ -14,7 +14,7 @@ This is a guide on how to setup SSH on Windows.
 3. Select **view features**.
 4. Select **See Available Features**
 
-<img alt="See available features" src="/setup/images/see-available-features.png">
+<img alt="See available features" src="/setup/images/see-available-features.png" width=300px>
 
 4. Look for or search for **OpenSSH Server** and `Add`.
 
