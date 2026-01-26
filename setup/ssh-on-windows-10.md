@@ -41,5 +41,6 @@ This is a guide on how to setup SSH on Windows 10.
     - Private networks
     - Public networks (For lab use only)
 
+<img alt="allow OpenSSH firewall" src="" width=300px>
 
 -----
