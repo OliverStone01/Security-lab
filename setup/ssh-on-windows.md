@@ -1,6 +1,6 @@
-# Setting up SSH on Windows
+# Setting up SSH on Windows 10 & 11
 
-This is a guide on how to setup SSH on Windows.
+This is a guide on how to setup SSH on Windows 10 and 11.
 
 -----
 
@@ -26,7 +26,7 @@ This is a guide on how to setup SSH on Windows.
 
 1. Open **Run** (`win+r`).
 2. Using **Run**, open **services** `services.msc`.
-3. Find **OpenSSH Authentication Agent**.
+3. Find **OpenSSH Server**.
 
 > If you want to the server to run every time you start your device, change **Startup type** to `Automatic`.
 >
