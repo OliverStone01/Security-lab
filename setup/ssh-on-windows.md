@@ -36,7 +36,7 @@ This is a guide on how to setup SSH on Windows.
 
 4. Click **Start**.
 
-<img alt="Setting startup option" src="/setup/images/setting-startup.png">
+<img alt="Setting startup option" src="/setup/images/setting-startup.png" width=300px>
 
 ------
 
