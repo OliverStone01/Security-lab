@@ -6,8 +6,7 @@ This is a guide on how to setup SSH on Linux (Debian, Ubuntu, and Kali).
 
 **Installing OpenSSH Server:**
 
-1. Open a **Terminal**
-2. Run the following command:
+Open a **Terminal** and run the following command:
 ```
 $ sudo apt install openssh-server
 ```
@@ -18,8 +17,7 @@ $ sudo apt install openssh-server
 
 **Enable SSH:**
 
-1. Open a **Terminal**
-2. Run the following commands:
+Open a **Terminal** and run the following commands:
 ```
 $ sudo systemctl enable ssh
 $ sudo systemctl start ssh
@@ -29,7 +27,7 @@ $ sudo systemctl start ssh
 
 **Verify SSH is running:**
 
-In a terminal, run the following command:
+Open a terminal and run the following command:
 ```
 $ sudo systemctl status ssh
 ```
