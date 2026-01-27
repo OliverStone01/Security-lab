@@ -100,3 +100,8 @@ This is a guide on how to setup SSH on Windows 10 and 11.
 If SSH is running you will see:
 
 <img alt="SSH running" src="/setup/images/ssh-running.png" width=400px>
+
+
+If SSH is installed but not running, you will see:
+
+<img alt="SSH Stopped" src="/setup/images/ssh-stopped.png" width=400px>
