@@ -88,3 +88,15 @@ This is a guide on how to setup SSH on Windows 10 and 11.
 <img alt="When dows this rule apply" src="/setup/images/when-rule-applies.png" width=300px>
 
 9. Set the name and save the rule.
+
+
+-----
+
+**Testing if SSH is active:**
+
+1. Open **Powershell**
+2. run `Get-Service sshd`
+
+If SSH is running you will see:
+
+<img alt="SSH running" src="/setup/images/ssh-running.png" width=400px>
