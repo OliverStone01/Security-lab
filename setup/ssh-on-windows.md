@@ -105,3 +105,8 @@ If SSH is running you will see:
 If SSH is installed but not running, you will see:
 
 <img alt="SSH Stopped" src="/setup/images/ssh-stopped.png" width=400px>
+
+
+If SSH is not installed, you will see:
+
+<img alt="SSH Not working" src="/setup/images/ssh-not-installed.png" width=400px>
