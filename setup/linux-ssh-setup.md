@@ -11,6 +11,7 @@ This is a guide on how to setup SSH on Linux (Debian, Ubuntu, and Kali).
 ```
 $ sudo apt install openssh-server
 ```
+
 > Kali Linux often has OpenSSH installed by default.
 
 -----
@@ -30,17 +31,29 @@ $ sudo systemctl start ssh
 
 In a terminal, run the following command:
 ```
-sudo systemctl status ssh
+$ sudo systemctl status ssh
 ```
 
 If ssh is running correctly, you will see:
+
+<img alt="ssh running" src="/setup/images/linux-ssh-running.png" width=400px>
+
+else, you will see:
+
+<img alt="ssh not running" src="/setup/images/linux-ssh-not-running.png" width=400px>
+
+-----
+
+**To stop and disable SSH:**
+
+Stopping SSH:
 ```
-active (running)
+$ sudo systemctl stop ssh
 ```
 
-If SSH is not found, try this command:
+To Disable SSH:
 ```
-sudo systemctl status sshd
+$ sudo systemctl disable ssh
 ```
 
 -----
