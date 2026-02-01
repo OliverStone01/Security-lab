@@ -148,3 +148,14 @@ msf6 > auxiliary(scanner/ssh/ssh_login) > run
 Metasploit will now attempt each password and create a SSH session on the device:  
 
 <img alt="Metasploit running bruteforce attack" src="/learning/logs/images/metasploit-bruteforce-running.png" width=500px>
+
+-----
+
+### The Twist
+
+When I performed this update, I did not get a successful SSH login. This is because the vulnerable machine had detected the amount of failed SSH attempts and blocked my attack machines IP address.
+
+I confirmed this by running the following command on the vulnerable device:
+```
+
+```
