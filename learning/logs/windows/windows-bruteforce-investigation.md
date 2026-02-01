@@ -62,6 +62,39 @@ iloveyou
 
 -----
 
-# Setting up the vulnerable device:
+### Setting up the vulnerable device:
 
-To setup the device, I installed a fresh version of Windows 10 onto an old laptop using a Windows 10 USB boot key I made. Once the device was setup, I created a basic local user and activated SSH.
+To setup the device, I installed a fresh version of Windows 10 onto an old laptop using a Windows 10 USB boot key I made. Once the device was setup with a basic local user account and SSH activated, I begun searching for the device on my attack machine.
+
+If you want to know how to setup SSH on Windows, you can see my guide [here.](https://github.com/OliverStone01/Security-lab/blob/main/setup/windows-ssh-setup.md)
+
+
+-----
+
+### Reconnaissance (Scanning for the vulnerable machine)
+
+Before I could attack my victim device via SSH, I first needed to find the device on my network. To do this, I searched what my IP range was by using `ip a` on my attack VM.
+```
+$ ip a
+```
+
+<img alt="ip a scan" src="/learning/logs/images/ip a scan.png" width=600px>
+
+To get the IP range, you need to look under `eth0` for `inet x.x.x.x/x`
+
+> - `eth` = ethernet, `0` = first, `eth0` = the first ethernet interface.
+> - `inet` - internet protocol (IPv4)
+
+Once I had the IP range, I could use nmap to scan the range for devices that are using port 22 (commonly used by SSH):
+```
+$ nmap -p 22 x.x.x.x/x
+```
+
+<img alt="nmap scan results" src="/learning/logs/images/nmap-scan-for-windows-device.png" width=600px>
+
+By looking at the results of the scan, I could see the vulnerable device was displaying port 22 as `open`.
+
+-----
+
+### The attack
+
