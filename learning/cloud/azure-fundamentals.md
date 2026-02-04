@@ -147,6 +147,24 @@ Because the cloud is intended to as an over the internet delivery of resources, 
 
 -----
 
+### Benefits of manageability in the cloud
 
+A major benefit of cloud computing is the manageability options. There are two types of manageability for cloud computing:
+
+**Management of the cloud**
+Management of the cloud is managing your cloud resources. In the cloud, you can:
+- Automatically scale resources based on need.
+- Deploy resources based on preconfigured templates, removing the need for manual configuration.
+- Monitor the health of resources and automatically replace failing resources.
+- Receive automatic alerts based on configured metrics.
+
+**Management in the cloud**
+Management in the cloud is how you're able to manage your cloud environment and resources. You can manage these:
+- Through a web portal.
+- Using a command line interface.
+- Using APIs.
+- Using PowerShell.
+
+-----
 
 
