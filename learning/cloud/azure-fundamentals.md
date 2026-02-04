@@ -67,3 +67,30 @@ A multi-cloud scenario is when you use multiple public cloud providers. This can
 Azure Arc is a set of technologies that helps manage your cloud environment. You can use Azure Arc to control all cloud models.
 
 **Azure VMware Solution**
+Azure VMware solutions lets you run your VMware workloads in Azure with seamless integration and scalability.
+
+-----
+
+### Consumption-based Model
+
+When comparing IT infrastructure models, there are two types of expenses:
+- Capital expenditure (CapEx)
+- Operational expenditure (OpEx)
+
+**CapEx** is typically a one time, up front expenditure to purchase or secure tangible resources.
+- New building
+- Repaving the parking lot
+- Building a datacenter
+- Buying a company vehicle
+
+
+**OpEx** is spending money on services or products over time.
+- Renting a convention center
+- Leasing a company vehicle
+- Signing up for cloud services
+
+Cloud computing falls under OpEx because the cost depends on the amount of consumption used. There is also no upfront cost for physical infrastructure. If you do not use the resources this month, you don't pay anything (Pay as you go).
+
+-----
+
+
