@@ -93,4 +93,60 @@ Cloud computing falls under OpEx because the cost depends on the amount of consu
 
 -----
 
+### High availability and scalability in the cloud
+
+When building and deploying a cloud application, the two biggest considerations are **uptime** (availability) and **the ability to handle demand**.
+
+**High availability**
+High availability focuses on ensuring maximum availability, regardless of disruption or events that may occur. It's important that resources are available when needed.
+
+When architecting your solution, you need to account for **service availability guarantees**. Azure is a highly available cloud environment with uptime guarantees depending on the service.
+
+These guarantees are part of the **service-level agreements (SLAs)**.
+
+A service level agreement sets out what the uptime for a cloud service should be. If the service falls below this up time, the organisation may be entitled to discounted costs.
+
+A service level agreement with a 99% uptime guarantee means that the service can be down for 423 minuets a month. Compared to a 99.9% uptime which only allows for 43.2 minuets of downtime a month.
+
+**Scalability**
+A major benefit of cloud computing is the scalability of cloud resources. Scalability refers to the ability to adjust resources to meet demand.
+
+Scaling generally comes in two varieties: vertical and horisontal.
+
+- Vertical Scaling = Focused on increasing or decreasing the capabilities of resources. For example, If you needed to increase processing power, you could vertically scale up to add more CPIs or RAM to the virtual machine.
+
+- horisontal Scaling = Adding or subtracting the number of resources. For example, if you suddenly had a large increase in demand, you could deploy more resources (automatically or manually) like more virtual machines or containers.
+
+-----
+
+### Reliability and predictability in the cloud
+
+**Reliability**
+Reliability is the ability of a system to recover from failures and continue to function. It's also one of the pillars of the **Microsoft Azure Well-Architected Framework**.
+
+The cloud has a decentralised design by deploying resources around the world. This means that if some region is affected, resources can be pulled from other regions.
+
+**Predictability**
+Predictability is the ability to predict performance and cost.
+
+**Performance predictability** focuses on predicting the resources needed to deliver a positive experience for customers. To improve performance predictability, we can use, autoscaling, load balancers, and high availability. 
+
+**Cost predictability is focused on predicting or forecasting the cost of the cloud. With the cloud, you can track resource use in real time, monitor use over time, apply data analytics to predict future costs and adjust resources as needed.
+
+-----
+
+### Benefits of security and governance in the cloud.
+
+No matter the cloud model you are using, cloud features support governance and compliance. Things like set templates help ensure that all deployed resources meet corporate standards and government regulatory requirements. You can also update your deployed resources to a new standard as soon as standards change.
+
+Cloud based auditing is used to help flag any resources that are out of compliance with your corporate standards and provides mitigations strategies.
+
+If you want maximum control of security, **Infrastructure as a service (IaaS)** provides you with physical resources but lets manage the operating systems and installed software, including patches and maintenance. With Platform as a service (PaaS), updates, patches, and maintenance is taken care of automatically. 
+
+Because the cloud is intended to as an over the internet delivery of resources, cloud providers are well suited to handle things like distributed denial of service (DDoS) attacks.
+
+-----
+
+
+
 
