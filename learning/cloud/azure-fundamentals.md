@@ -167,4 +167,16 @@ Management in the cloud is how you're able to manage your cloud environment and 
 
 -----
 
+### Infrastructure as a Service (IaaS)
+Infrastructure as a service is the most flexible type of cloud services as it provides you the maximum amount of control for your cloud resources. In a IaaS model, the cloud provider is responsible for maintaining the hardware, network connection, and the physical security. You are responsible for everything else.
+
+**Scenarios**
+Some common scenarios where IaaS might be used:
+- Lift and shift migration: You are setting up cloud resources similar to your on premises datacenter and then migrating to the cloud environment.
+
+- Testing and development: You have established configurations for development and test environments that you need to replicate quickly.
+
+-----
+
+
 
