@@ -190,5 +190,14 @@ PaaS is a well suited to provide a complete development environment without the 
 
 -----
 
+### Software as a Service (SaaS)
+Software as a service is the most complete cloud service model form a product perspective. With SaaS, you are essentially renting or using a fully developed application. Email, financial software, messaging applications, and connectivity software are all common examples of a SaaS implementation.
 
+While SaaS is the least flexible, it's also the easiest to get up and running.
 
+**Scenarios**
+- Email and messaging.
+- Business productivity applications.
+- Finance and expense tracking.
+
+-----
