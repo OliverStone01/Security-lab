@@ -178,5 +178,17 @@ Some common scenarios where IaaS might be used:
 
 -----
 
+### Platform as a Service (PaaS)
+Platform as a service is a middle ground between renting space in a datacenter and paying for a complete deployed solution. In a PaaS environment, the cloud provider maintains the physical infrastructure, physical security, and internet connection. They may also maintain the operating system, middleware, development tools, and business intelligence services.
+
+PaaS is a well suited to provide a complete development environment without the headache of maintaining all the development infrastructure.
+
+**Scenarios**
+- Development framework: PaaS provides a framework that developers can build upon to develop or customise cloud-based applications.
+- Analytics or business intelligence: Tools provided as a service with PaaS allow organisations to analyse and mine their data.
+
+
+-----
+
 
 
