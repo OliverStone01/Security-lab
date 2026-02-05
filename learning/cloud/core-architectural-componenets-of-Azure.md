@@ -78,7 +78,32 @@ The [Global infrastructure](https://infrastructuremap.microsoft.com/) site allow
 **Regions**
 A region is a geographical area on the planet that contains at least one datacenter or multiple datacenters that are nearby and networked together with a low-latency network. Azure assigns and controls the resources with each region to ensure workloads are appropriately balanced.
 
-Some services or virtual machine features are only available in certain regions.
+Some services or virtual machine features are only available in certain regions. There are also some global services that don't require you to select a particular region, such as Microsoft Entra ID, Azure Traffic Manager, and Azure DNS.
+
+
+**Availability Zones**
+Availability zones are physically separated datacenters within an Azure region. Each availability zone is made up of one or more datacenters equipped with independent power, cooling, and networking.
+
+An availability zone is set up to be an isolation boundary. If one zone goes down, the other continues working. Availability zones are connected through high-speed, private fiber-optic networks.
+
+<img alt="Azure Region" src="" width=300px>
+
+> To ensure resilience, a minimus of three separate availability zones are present in all availability zone-enabled regions.
+
+
+**Use Availability zones in your apps**
+You want to ensure your services and data are redundant so you can protect your information in case of failure. Instead of needing to host a duplicate of your hardware environment, you can use available zones instead which will take over if anything goes down.
+
+Availability zones are primarily for virtual machines, managed disks, load balancers, and SQL databases.
+
+Azure services that support availability zones fall into three categories:
+- **Zonal Services**: You pin the resources to a specific zone.
+- **Zone-redundant services**: The platform replicates automatically across zones.
+- **Non-regional services**: Services are always available from Azure geographies and are resilient to zone-wide outages as well as region-wide outages.
+
+
+
+
 
 
 
