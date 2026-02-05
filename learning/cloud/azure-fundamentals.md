@@ -37,7 +37,7 @@ The shared responsibility model is heavily tied to the cloud service type:
 - Platform as a service (PaaS)
 - Software as a service (SaaS)
 
-<img alt="Shared responsibility model" src="" width=200px>
+<img alt="Shared responsibility model" src="/learning/cloud/images/Shared responsibility model.png" width=200px>
 
 -----
 
@@ -57,7 +57,7 @@ A public cloud is built, controlled and maintained by a third party. Anyone can 
 **Hybrid Cloud**
 A hybrid cloud is a computing environment that uses both public and private clouds in an interconnected environment. The organisation can run a private cloud and then use public clouds to increase resources (power, storage) during surges of demand. Hybrid clouds also provide an extra layer of security by allowing flexibility on which services are kept on either the public or private cloud.
 
-<img alt="Table comparing cloud models" src="" width=200px>
+<img alt="Table comparing cloud models" src="/learning/cloud/images/Table comparing cloud models.png" width=200px>
 
 
 **Multi-Cloud**
