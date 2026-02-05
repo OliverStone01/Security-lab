@@ -102,7 +102,95 @@ Azure services that support availability zones fall into three categories:
 - **Non-regional services**: Services are always available from Azure geographies and are resilient to zone-wide outages as well as region-wide outages.
 
 
+Even with the additional resiliency that availability zones provide, it's possible that an event could be so large that it impacts multiple availability zones in a single region.
 
+
+**Region pairs**
+Most Azure regions are paired with another region within the the same geography (US, Europe, or Asia) at least 300 miles away. This approach allows for the replication of resources across a geography that helps reduce the likelihood of interruptions.
+
+> Not all Azure services automatically replicate data or automatically fall back from a failed region. Recovery and replication must be configured by the customer.
+
+An example of a regional pain is Azure are **West US paired with East US** and **South-East Asia paired with East Asia.
+
+<img alt="Geography" src="" width=300px>
+
+**Additional advantages of region pairs:**
+- If an extensive Azure outage occurs, one region out of every pair is prioritised to make sure at least one is restored as quickly as possible for applications hosted in that region pair.
+
+- Planned Azure updated are rolled out to paired regions one region at a time to minimise downtime and risk of application outages.
+
+- Data continues to reside within the same geography as its pair (except for Brazil South) for tax and law-enforcement jurisdiction purposes.
+
+**Sovereign Regions**
+Sovereign regions are instances of Azure that are isolated from the main instance of Azure. You may need to use a sovereign region for compliance or legal purposes.
+
+Azure sovereign regions include:
+- US DoD Central, US Gov Virginia, US Gov Iowa and more: 
+
+These regions are physical and logical network isolated instances of Azure for U.S. government agencies and partners.
+These datacenters are operated by screened U.S. personnel and include additional compliance certifications.
+
+- China East, China North, and more:
+
+These regions are available through a unique partnership between Microsoft and 21Vianet. Microsoft do not directly maintain these datacenters.
+
+-----
+
+### Azure Management infrastructure 
+
+**Azure resources and resource groups**
+A resource is the basic building block of Azure. A resource is anything you create, provision, deploy, etc.
+
+Resource groups are simply grouping of resources. When creating resources, you are required to place it into a resource group. 
+
+A resource can only be in one resource group at a time. You also cannot nest resource groups.
+
+When you apply an action to a resource group, that action will be applied to to all resources within the resource group.
+
+If you delete a resource group, all resources in the group will be deleted.
+
+If you grant or deny access to a resource group, all those resources will have that effect.
+
+
+**Azure Subscriptions**
+Subscriptions are a unit of management, billing, and scale. Subscriptions allow you to logically organise your resource groups ajd facilitate billing.
+
+<img alt="Azure subscriptions" src="" width=300px>
+
+Subscriptions provide you with authenticated and authorised access to Azure products and services. An Azure subscription links to an Azure account, which is an identity in Microsoft Entra ID or in a directory that Microsoft Entra ID trusts.
+
+An account can have multiple subscriptions. You can use Azure subscriptions to define boundaries around Azure products, services, and resources. There are two types of subscription boundaries that you can use:
+
+- **Billing Boundary**: This subscription type determines how an Azure account is billed for using Azure. Azure generates separate billing reports and invoices for each subscription so that you can organise and manage costs.
+
+- **Access control boundary**: Azure applies access-management policies at the subscription level, and you can create separate subscriptions to reflect different organisational structures. 
+
+
+You might choose to create additional subscriptions to separate:
+
+- **Environments**: Set up separate environments for development and testing, security, or to isolate data for compliance reasons.
+
+- **Organisational Structures**: You can create subscriptions to reflect different organisational structures. You could limit one team to lower-cost resources, while allowing the IT department full range.
+
+- **Billing**: Because costs are first aggregated at the subscription level, you might want to create subscriptions to manage and track costs based on your needs.
+
+
+**Azure management groups**
+**Resources** gather into **resource groups**, and **resource groups** are gathered into **subscriptions**. If you have many **subscriptions**, you might need a way to efficiently manage access, policies, and compliance for those subscriptions.
+
+****Azure management groups** provide a level of scope above subscriptions. You organise subscriptions into containers called **management groups** and apply governance conditions applied to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group.
+
+Management groups can be nested.
+
+**Management group, Subscriptions, and resource group hierarchy**
+You can build a flexible structure of management groups and subscriptions to organise resources into a hierarchy for unified policy and access management. The following diagram shows an example of creating a hierarchy for governance by using management groups.
+
+<img alt="hierarchy" src="" width=300px>
+
+Important facts about management groups:
+- 10,000 management groups can be supported in a single directory.
+- A management group tree can support up to six levels of depth. This limit does'nt include the root level or the subscription level.
+- Each management group and subscription can support only one parent.
 
 
 
