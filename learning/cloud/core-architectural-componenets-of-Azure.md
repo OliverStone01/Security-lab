@@ -26,7 +26,7 @@ You can change between **PowerShell** and **BASH** by selecting the **Switch to 
 - When in BASH mode, the command line starts with `username@azure`.
 
 
-**PowerShell in the CLI**
+#### PowerShell in the CLI
 
 `Get-date` - get the current date and time.
 
