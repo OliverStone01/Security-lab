@@ -35,7 +35,7 @@ Most Azure specific commands start with the letters **az**.
 `az version` - Check version of CLI.
 
 
-**Use BASH in the CLI**
+#### Use BASH in the CLI
 
 `date` - get the current date and time.
 
@@ -44,7 +44,7 @@ Just like PowerShell, most of the commands begin with **az**.
 `az upgrade` - run an update to the CLI.
 
 
-**Use Azure CLI interactive mode**
+#### Azure CLI interactive mode
 You can interact with Azure using the **Azure CLI interactive mode**. With interactive mode, you can use autocompletion, command descriptions, and examples.
 
 `az interactive` - enter interactive mode.
@@ -69,20 +69,20 @@ Because interactive mode is set up specifically for Azure, you do not need to st
 
 The core architectural components of Azure may be broken down into two main groups: The physical infrastructure, and the management infrastructure.
 
-**Physical infrastructure**
+#### Physical infrastructure
 The physical infrastructure for Azure starts with datacenters. These are facilities with resources arranged in racks, with dedicated power, cooling, and networking infrastructure.
 
 Azure has datacenters around the world. Datacenters are grouped into **Azure Regions** or **Azure Availability Zones**. These are designed to achieve resilience and reliability by allowing workloads to pass to other zones if one goes down.
 
 The [Global infrastructure](https://infrastructuremap.microsoft.com/) site allows you to explore the underlying Azure infrastructure.
 
-**Regions**
+#### Regions
 A region is a geographical area on the planet that contains at least one datacenter or multiple datacenters that are nearby and networked together with a low-latency network. Azure assigns and controls the resources with each region to ensure workloads are appropriately balanced.
 
 Some services or virtual machine features are only available in certain regions. There are also some global services that don't require you to select a particular region, such as Microsoft Entra ID, Azure Traffic Manager, and Azure DNS.
 
 
-**Availability Zones**
+#### Availability Zones
 Availability zones are physically separated datacenters within an Azure region. Each availability zone is made up of one or more datacenters equipped with independent power, cooling, and networking.
 
 An availability zone is set up to be an isolation boundary. If one zone goes down, the other continues working. Availability zones are connected through high-speed, private fiber-optic networks.
@@ -92,7 +92,7 @@ An availability zone is set up to be an isolation boundary. If one zone goes dow
 > To ensure resilience, a minimus of three separate availability zones are present in all availability zone-enabled regions.
 
 
-**Use Availability zones in your apps**
+#### Use Availability zones in your apps
 You want to ensure your services and data are redundant so you can protect your information in case of failure. Instead of needing to host a duplicate of your hardware environment, you can use available zones instead which will take over if anything goes down.
 
 Availability zones are primarily for virtual machines, managed disks, load balancers, and SQL databases.
@@ -106,7 +106,7 @@ Azure services that support availability zones fall into three categories:
 Even with the additional resiliency that availability zones provide, it's possible that an event could be so large that it impacts multiple availability zones in a single region.
 
 
-**Region pairs**
+#### Region pairs
 Most Azure regions are paired with another region within the the same geography (US, Europe, or Asia) at least 300 miles away. This approach allows for the replication of resources across a geography that helps reduce the likelihood of interruptions.
 
 > Not all Azure services automatically replicate data or automatically fall back from a failed region. Recovery and replication must be configured by the customer.
@@ -115,14 +115,14 @@ An example of a regional pain is Azure are **West US paired with East US** and *
 
 <img alt="Geography" src="/learning/cloud/images/geography.png" width=300px>
 
-**Additional advantages of region pairs:**
+#### Additional advantages of region pairs:
 - If an extensive Azure outage occurs, one region out of every pair is prioritised to make sure at least one is restored as quickly as possible for applications hosted in that region pair.
 
 - Planned Azure updated are rolled out to paired regions one region at a time to minimise downtime and risk of application outages.
 
 - Data continues to reside within the same geography as its pair (except for Brazil South) for tax and law-enforcement jurisdiction purposes.
 
-**Sovereign Regions**
+#### Sovereign Regions
 Sovereign regions are instances of Azure that are isolated from the main instance of Azure. You may need to use a sovereign region for compliance or legal purposes.
 
 Azure sovereign regions include:
@@ -139,7 +139,7 @@ These regions are available through a unique partnership between Microsoft and 2
 
 ### Azure Management infrastructure 
 
-**Azure resources and resource groups**
+#### Azure resources and resource groups
 A resource is the basic building block of Azure. A resource is anything you create, provision, deploy, etc.
 
 Resource groups are simply grouping of resources. When creating resources, you are required to place it into a resource group. 
@@ -153,7 +153,7 @@ If you delete a resource group, all resources in the group will be deleted.
 If you grant or deny access to a resource group, all those resources will have that effect.
 
 
-**Azure Subscriptions**
+#### Azure Subscriptions
 Subscriptions are a unit of management, billing, and scale. Subscriptions allow you to logically organise your resource groups and facilitate billing.
 
 Subscriptions provide you with authenticated and authorised access to Azure products and services. An Azure subscription links to an Azure account, which is an identity in Microsoft Entra ID or in a directory that Microsoft Entra ID trusts.
@@ -174,10 +174,10 @@ You might choose to create additional subscriptions to separate:
 - **Billing**: Because costs are first aggregated at the subscription level, you might want to create subscriptions to manage and track costs based on your needs.
 
 
-**Azure management groups**
+#### Azure management groups
 **Resources** gather into **resource groups**, and **resource groups** are gathered into **subscriptions**. If you have many **subscriptions**, you might need a way to efficiently manage access, policies, and compliance for those subscriptions.
 
-****Azure management groups** provide a level of scope above subscriptions. You organise subscriptions into containers called **management groups** and apply governance conditions applied to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group.
+**Azure management groups** provide a level of scope above subscriptions. You organise subscriptions into containers called **management groups** and apply governance conditions applied to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group.
 
 Management groups can be nested.
 
