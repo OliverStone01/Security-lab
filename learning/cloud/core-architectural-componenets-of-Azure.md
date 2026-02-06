@@ -55,7 +55,7 @@ Wait a minute to allow the interactive mode to initialise.
 
 `a` - start auto-completion.
 
-<img alt="Start interactive mode" src="" width=300px>
+<img alt="Start interactive mode" src="/learning/cloud/images/interactive-mode.png" width=300px>
 
 Once intitialised, you can use the arrow keys or tab to help complete commands. 
 
