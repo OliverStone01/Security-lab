@@ -16,7 +16,7 @@ You can access the portal [with this link](https://portal.azure.com/).
 
 You can access the **command line interface** within the Azure portal by selecting the Cloud Shell icon.
 
-<img alt="Cloud Shell Icon" src="/learning/cloud/images/cloud-shell-icon.png" width=200px>
+<img alt="Cloud Shell Icon" src="/learning/cloud/images/cloud-shell-icon.png" width=100px>
 
 You can change between **PowerShell** and **BASH** by selecting the **Switch to ...** or by entering `BASH` or `PWSH`.
 
