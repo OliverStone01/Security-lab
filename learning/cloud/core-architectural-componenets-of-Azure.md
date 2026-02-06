@@ -5,7 +5,7 @@ To use Azure, you first need to create an Azure account and choose a subscriptio
 
 A company might use a **single Azure account** for the business and **separate subscriptions** for development, marketing, and sales departments. Once you have created a Azure subscription, you can start creating Azure resources within each subscription.
 
-<img alt="Azure accounts" src="". width=200px>
+<img alt="Azure accounts" src="/learning/cloud/images/azure-accounts.png". width=200px>
 
 -----
 
@@ -16,13 +16,14 @@ You can access the portal [with this link](https://portal.azure.com/).
 
 You can access the **command line interface** within the Azure portal by selecting the Cloud Shell icon.
 
-<img alt="Cloud Shell Icon" src="" width=200px>
+<img alt="Cloud Shell Icon" src="/learning/cloud/images/cloud-shell-icon.png" width=200px>
 
 You can change between **PowerShell** and **BASH** by selecting the **Switch to ...** or by entering `BASH` or `PWSH`.
 
-<img alt="Switch to button" src="" width=100px>
+<img alt="Switch to button" src="/learning/cloud/images/switch-to-button.png" width=100px>
 
-When in PowerShell mode, the command line starts with `PS`. When in BASH mode, the command line starts with your `username@azure`.
+- When in PowerShell mode, the command line starts with `PS`. 
+- When in BASH mode, the command line starts with `username@azure`.
 
 
 **PowerShell in the CLI**
@@ -112,7 +113,7 @@ Most Azure regions are paired with another region within the the same geography 
 
 An example of a regional pain is Azure are **West US paired with East US** and **South-East Asia paired with East Asia.
 
-<img alt="Geography" src="" width=300px>
+<img alt="Geography" src="/learning/cloud/images/geography.png" width=300px>
 
 **Additional advantages of region pairs:**
 - If an extensive Azure outage occurs, one region out of every pair is prioritised to make sure at least one is restored as quickly as possible for applications hosted in that region pair.
@@ -153,9 +154,7 @@ If you grant or deny access to a resource group, all those resources will have t
 
 
 **Azure Subscriptions**
-Subscriptions are a unit of management, billing, and scale. Subscriptions allow you to logically organise your resource groups ajd facilitate billing.
-
-<img alt="Azure subscriptions" src="" width=300px>
+Subscriptions are a unit of management, billing, and scale. Subscriptions allow you to logically organise your resource groups and facilitate billing.
 
 Subscriptions provide you with authenticated and authorised access to Azure products and services. An Azure subscription links to an Azure account, which is an identity in Microsoft Entra ID or in a directory that Microsoft Entra ID trusts.
 
@@ -185,7 +184,7 @@ Management groups can be nested.
 **Management group, Subscriptions, and resource group hierarchy**
 You can build a flexible structure of management groups and subscriptions to organise resources into a hierarchy for unified policy and access management. The following diagram shows an example of creating a hierarchy for governance by using management groups.
 
-<img alt="hierarchy" src="" width=300px>
+<img alt="hierarchy" src="/learning/cloud/images/azure-subscription.png" width=300px>
 
 Important facts about management groups:
 - 10,000 management groups can be supported in a single directory.
