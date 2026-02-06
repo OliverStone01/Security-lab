@@ -111,7 +111,7 @@ Most Azure regions are paired with another region within the the same geography 
 
 > Not all Azure services automatically replicate data or automatically fall back from a failed region. Recovery and replication must be configured by the customer.
 
-An example of a regional pain is Azure are **West US paired with East US** and **South-East Asia paired with East Asia.
+An example of a regional pain is Azure are **West US paired with East US** and **South-East Asia paired with East Asia**.
 
 <img alt="Geography" src="/learning/cloud/images/geography.png" width=300px>
 
