@@ -74,3 +74,52 @@ With Azure virtual desktop you can use Windows 10 or Windows 11 Enterprise multi
 Virtual machines run single operating system per machine. If you want to run multiple instances of an application on a single host machine, containers are an excellent choice.
 
 #### What are containers?
+Containers, like Docker, are a lightweight, agile alternative to virtual machines for running applications. They allow for dynamic creation, scaling, and quick restarts, making them ideal for responding to changes in demand.
+
+Virtual machines are whole computers hosted on the cloud. Containers are only one application and its dependencies.
+
+Container cluster orchestration allows you to control a group of containers including spinning up new containers.
+
+#### Azure container instances
+Azure container instances offer the fastest and simplest way to run a container in Azure without having to manage any virtual machines or any other services.
+
+Azure container instances are a **Platform as a Service (PaaS)**.
+
+Azure container instances allow you to upload your containers and then the service runs the container for you.
+
+#### Azure container apps
+Azure container apps are similar to container instances but they have the added benefits of ability to incorporate load balancing and scaling.
+
+#### Azure kubernetes services
+Azure kubernetes services (AKS) is a container orchestration service.
+
+#### Use containers in your solutions
+Containers are used to create microservice architecture. This is when you break a solution into smaller pieces. For example, you may split a website into a container for your front end, one for backend, and one for storage.
+
+This allows you to scale parts of the sites without wasting money or resources on unnecessary parts of the site.
+
+-----
+
+#### Azure functions
+Azure Functions is a serverless compute option that eliminates the need to maintain virtual machines or containers.
+
+#### Serverless computing
+Serverless computing is where you can host your application without needing to focus on the operating system or the host device.
+
+This is a good solution for scaling and you are only charged for what you use.
+
+#### Azure functions
+Azure functions is ideal when you are only concerned about the code running your service and not able the underlying platform or infrastructure.
+
+Functions are commonly used when you need to perform work in response to an event, timer, or message from another Azure service.
+
+Functions scale automatically based on demand.
+
+Azure functions runs your code when it triggers and automatically deallocate resources when the function is finished. In this model, you are only charged for CPU time used while your function runs.
+
+Functions can be either stateless or stateful. When they are stateless, they behave as if they restart ever time they respond to an event. When they are stateful, a context is passed through the function to track prior activity.
+
+Functions are a key component of serverless computing.
+
+-----
+
