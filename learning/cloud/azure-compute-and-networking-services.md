@@ -158,3 +158,62 @@ Use the mobile apps feature of app service to quickly build a back end for IOS a
 -----
 
 #### Azure virtual networking
+Azure virtual networks and subnets connect Azure resources, enabling communication within Azure, with the internet, and on-premises networks.
+
+Azure virtual networks provide the following key networking capabilities:
+- Isolation and segmentation
+- Internet communications
+- Communicate between Azure resources
+- Communicate with on premises resources
+- Route network traffic
+- Filter network traffic
+- Connect virtual networks
+
+
+Azure virtual networking supports both public and private endpoints to enable communications between external or internal resources with other internal resources.
+
+- Public endpoints have a public UP address and can be accessed from anywhere in the world.
+- Private endpoints exist within a virtual network and have a private IP address from within the address space of that virtual network.
+
+#### Isolation and segmentation
+Azure virtual network allows you to create multiple isolated virtual networks. When you setup a virtual network, you define a private IP address space by using either public or private IP address ranges.
+
+The IP range only exists within the virtual network and isn't internet routable. You can divide that IP address space into subnets and allocate part of the defined address space to each named subnet.
+
+For name resolution, you can use the name resolution service build into Azure. You also can configure the virtual network to use either an internal or external DNS server.
+
+#### Internet communications
+Yuo can enable incoming connections from the internet by assigning a public IP address to an Azure resource, or putting the resource behind a public load balancer.
+
+#### Communicate between Azure resources
+You want to enable Azure resources to communicate securely with each other. You can do in one of two ways:
+- Virtual networks can connect not only VMs but other Azure resources, such as the App service environment for power apps, Azure kubernetes service, and Azure virtual machine scaler sets.
+- Service endpoint can connect to other Azure resource types, such as Azure SQL databases and storage accounts.
+
+
+#### Communicate with on premises resources
+Azure virtual networks connect on-premises and Azure resources, creating a network spanning both environments.
+
+There are three mechanisms for you to achieve this connectivity:
+- Point to site virtual private network connections are from a computer outside your organisation back into your corporate network. In this case, the client computer initiates an encrypted VPN connection to connect to the Azure virtual network.
+- Site to site virtual private networks link your on premises VPN devices or gateway to the Azure VPN gateway in a virtual network. In effect, the devices in Azure can appear as being on the local network. The connection is encrypted and works over the internet.
+- Azure ExpressRoute provides a dedicated private connectivity to Azure that doesn't travel over the internet. ExpressRoute is useful for environments where you need greater bandwidth and even higher levels of security.
+
+#### Route network traffic
+By default, Azure routes traffic between subnets on any connected virtual networks, on premises networks, and the internet. You also can control routing and override those settings, as followed:
+- Route table allows you to define rules about how traffic should be directed. You can create custom route tables that control how packets are routed between subnets.
+- Border Gateway Protocol (BGP) works with Azure VPN gateways, Azure Route Server, or Azure ExpressRoute to propagate on premises BGP routes to Azure virtual networks.
+
+
+#### Filter network traffic
+Azure virtual networks enable you to filter traffic between subnets by using the following approaches:
+- Network security groups are Azure resources that can contain multiple inbound and outbound security rules. You can define these riles to allow or block traffic, based on factors such as source and destination IP address, port, and protocol.
+- Network virtual appliances are specialised VMs that can be compared to a hardened network appliance. A network virtual appliance carries out a particular network function, such as running a firewall or performing wide area network (WAN) optimisation.
+
+
+#### Connect Virtual networks
+Virtual network peering connects two virtual networks directly, enabling private communication between resources across regions. User-defined routes (UDR) provide control over routing tables within and between virtual networks.
+
+-----
+
+
