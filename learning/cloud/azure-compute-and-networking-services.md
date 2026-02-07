@@ -123,3 +123,38 @@ Functions are a key component of serverless computing.
 
 -----
 
+#### Other Application hosting options
+
+
+#### Azure app services
+App service enables you to build and host web apps, background jobs, mobile back ends, and automatic scaling and high availability. App service support Windows and Linux. It enables automated deployment from GitHub, Azure DevOps, or and Git repo.
+
+Azure app service is a HTTP-based service for hosting web applications, REST APIs, and mobile back ends.
+
+Azure app services supports programming languages like **Java, PHP, Python, and JavaScript** and frameworks such as **.NET and .NET core**.
+
+#### Types of app services
+With app services, you can host common app service styles like:
+
+- Web apps
+- API apps
+- Webjobs
+- Mobile apps
+
+App services handles most of the infrastructure decisions you deal with in hosting web-accessible apps:
+- Deployment and management are integrated into the platform.
+Endpoints can be secured.
+Sites can be scaled quickly to handle high traffic loads.
+The built in load balancing and traffic manager provide high availability.
+
+#### Mobile apps
+Use the mobile apps feature of app service to quickly build a back end for IOS and Android apps. You can:
+- Store mobile app data in a cloud-based SQL database.
+- Authenticate customers against common social providers such as MSA, Google, X, and Facebook.
+- Send push notifications.
+- Execute custom back end logic in C# or Node.js.
+
+
+-----
+
+#### Azure virtual networking
