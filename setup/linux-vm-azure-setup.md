@@ -31,9 +31,19 @@ This documents how I setup a Linux virtual machine hosted on Microsoft Azure.
 
 <img alt="Select bash" src="" width=200px>
 
-3. Select `Mount Storage account`
+3. Select `Mount Storage account`, click apply.
 
 <img alt="Mount storage account" src="" width=200px>
 
+4. Select `I want to create a storage account`
 
+<img alt="Create storage account" src="" width=200px>
 
+5. Create name for storage account.
+
+6. Once your terminal loads, run the following command:
+```
+az vm create --name <NAME> --resource-group <RESOURCE GROUP> --image Ubuntu2204 --location EastUS2 --admin-username azureuser --size Standard_D2as_v6
+```
+
+This will now create your VM.
