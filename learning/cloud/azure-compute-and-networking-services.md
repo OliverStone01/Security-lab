@@ -216,4 +216,89 @@ Virtual network peering connects two virtual networks directly, enabling private
 
 -----
 
+#### Azure virtual Private Networks
+A virtual private network (VPN) is an encrypted tunnel typically deployed to connect two networks over the internet. Traffic is encrypted in transport to prevent eavesdropping.
+
+#### VPN gateways
+A VPN gateway is a type of virtual network gateway. Azure VPN gateway instances are deployed in a dedicated subnet of virtual network and enable the following:
+
+- Connect on-premises datacenters to virtual networks through a site-to-site connection.
+- Connect individual devices to virtual networks through a point-to-site connection.
+- Connect virtual networks to other virtual networks through a network-to-network connection.
+
+You can use one gateway to connect to multiple locations, which includes other virtual networks or on-premises datacenters.
+
+When setting up a VPN gateway, you must specify the type of VPN:
+- Policy Based
+- Route Based
+
+The difference between the two is how they determine which traffic needs encryption. In Azure, regardless of the VPN type, the method of authentication is a pre shared key.
+
+- Policy-based VPN gateways encrypt packets based on statically defined IP address sets for each tunnel.
+- Route-based VPNs, preferred for on-premises devices, use IPSec tunnels modelled as network interfaces. IP routing determines which tunnel interface to use for packet transmission.
+
+Use a route based VPN if you need:
+- Connections between virtual networks.
+- Point-to-site connections
+- Multi site connections.
+- Coexistence with an Azure ExpressRoute gateway.
+
+#### High available scenarios
+When configuring a VPN to keep your information safe, you also want to make sure that it's highly available and fault tolerant.
+
+**Active/Standby**  
+VPN gateways are deployed as two instances in an active/standby configuration for high availability. The standby instance automatically takes over during planned maintenance or unplanned disruptions, with minimal connection interruptions.
+
+**Active/Active**  
+BGP routing protocol support enables active/active VPN gateway deployment with unique public IP addresses for each instance.
+
+**ExpressRoute failover** 
+A VPN gateway can be configured as a secure failover path for ExpressRoute connections, providing an alternative method of connectivity in case of an ExpressRoute circuit outage.
+
+**Zone redundant gateways**
+VPN and ExpressRoute gateways can be deployed in a zone-redundant configuration in Azure availability zones, providing resiliency, scalability, and higher availability. This configuration requires different SKUs and Standard public IP addresses.
+
+-----
+
+#### Azure ExpressRoute
+ExpressRoute circuit lets you extend your on premises networks into the Microsoft cloud over a private connection.
+
+ExpressRoute connections offer reliable, high-speed, and secure connectivity, bypassing the public Internet for enhanced performance.
+
+**Benefits of ExpressRoute**  
+- Microsoft cloud services connectivity across all regions.
+- ExpressRoute Global Reach provides global connectivity to Microsoft services.
+- Dynamic routing between your network and Microsoft via Border Gateway Protocol (BGR).
+- Built in redundancy in every peering location for higher reliability.
+
+
+#### ExpressRoute connectivity models
+- **CloudExchange colocation:** Colocation at a cloud exchange enables requesting a virtual cross-connect to the Microsoft cloud.
+
+- **Point to Point Ethernet connection:** Point-to-point ethernet connection connects a facility to the Microsoft cloud.
+
+- **Any to Any networks:** 
+Azure integrates with WAN connections, providing seamless connectivity between offices and data centers.
+
+- **Directly from ExpressRoute sites:**
+ExpressRoute Direct offers dual 100 Gbps or 10-Gbps connectivity to Microsoft’s global network at strategically distributed peering locations.
+
+#### Security considerations
+With ExpressRoute, your data isn't traveling over the public internet which reduces the risk associated with internet communications although ExpressRoute connections still route DNS queries, CRL checks, and CDN requests over the public internet.
+
+-----
+
+#### Azure DNS
+Azure DNS is a hosting service for DNS domains that provides name resolutions by using Microsoft Azure infrastructure.
+
+#### Benefits of Azure DNS
+- Reliability and performance
+- Security
+- Ease of use
+- customisable virtual networks
+- Alias records
+
+Azure DNS uses Anycast networking.
+
+
 
