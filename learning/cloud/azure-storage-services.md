@@ -118,3 +118,26 @@ The following considerations apply to the different tiers:
 - Hot, cool, and cold access tiers can be set at the account level.
 - Cool and cold data tolerate lower availability but require high durability, retrieval latency, and throughput. Lower availability SLAs and higher access costs are acceptable trade-offs for lower storage costs.
 - Archive storage offers the lowest storage costs but highest rehydration and access costs.
+
+#### Azure files
+Azure File Storage provides fully managed, cloud-based file shares accessible via SMB or NFS protocols. SMB shares support Windows, Linux, and macOS clients, while NFS shares support Linux and macOS clients.
+
+Key benefits:
+- Shared access
+- Fully managed
+- Scripting and tooling
+- Resiliency
+- Familiar programmability
+
+#### Azure Queues
+Azure Queue storage is a service for storing large numbers of messages, accessible from anywhere via authenticated HTTP or HTTPS calls. It can be combined with compute functions like Azure Functions to trigger actions based on received messages.
+
+
+#### Azure Disks
+Azure Disk Storage, or Azure managed disks, are virtualised block-level storage volumes for Azure VMs, offering greater resiliency and availability than physical disks.
+
+#### Azure tables
+Azure Table Storage is a NoSQL datastore for structured, non-relational data, ideal for hybrid or multicloud solutions.
+
+-----
+
