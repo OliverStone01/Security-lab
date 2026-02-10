@@ -77,6 +77,44 @@ The Azure storage platform includes the following data services:
 
 - **Azure Blobs:** is a scalable object store for text and binary data, supporting big data analytics.
 - **Azure Files:** Managed file shares for cloud or on premises deployments.
-- **Azure Queues:** A messaging store for reliable messaging between application componu
+- **Azure Queues:** a messaging store for reliable messaging.
+- **Azure Disks:** Block level storage volumes for azure VMs.
+- **Azure Tables:** NoSQL table option for structured, non relational data.
+
+#### Benefits of Azure storage
+- **Durability and high availability**
+- **Secure**
+- **Scalable**
+- **Managed**
+- **Accessible**
+
+#### Azure Blobs
+Azure Blob storage is an object storage solution for the cloud that can store massive amounts of unstructured data.
+
+Blob storage can handle various data types, including binary data, encrypted messages, and custom formats, without requiring developers to manage physical storage.
+
+Blob storage is ideal for:
+- Serving images or documents directly to a browser.
+- Storing files for distributed access.
+- Streaming video and audio
+- Storing data for backup and restore, disaster recovery, and archiving.
+- Storing data for analysis by an on premises or Azure hosted services.
 
 
+#### Accessing blob storage
+Blob storage objects are globally accessible via HTTP/HTTPS. Access is possible through URLs, APIs, PowerShell, CLI, or client libraries for various languages.
+
+
+#### Blob storage tiers
+Azure offers various access tiers to manage cloud storage costs based on data access frequency and retention period. Organising data by these attributes helps balance storage costs with access needs.
+
+The tiers are:
+- **Hot access tier:** For storing data that is accessed frequently (images for your website).
+- **Cool access tier:** For data that is infrequently accessed and stored for at least 30 days.
+- **Cold access tier:** For storing data that is infrequently accessed and stored for at least 90 days.
+- **Archive access tier:** For data that is rarely accessed and stored for at least 180 days, with flexible latency requirements.
+
+The following considerations apply to the different tiers:
+- Hot, cool, and cold access tiers can be set at the account level.
+- Cool and cold data tolerate lower availability but require high durability, retrieval latency, and throughput. Lower availability SLAs and higher access costs are acceptable trade-offs for lower storage costs.
+- Archive storage offers the lowest storage costs but highest rehydration and access costs.
