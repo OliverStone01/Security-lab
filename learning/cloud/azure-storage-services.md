@@ -179,4 +179,17 @@ Some use cases of exporting include:
 
 Data is securely erased from import and export devices according to NIST 800-88r1 standards.
 
+-----
 
+#### Azure file movement options
+
+**AZCopy**
+AzCopy is a command line utility for copying blobs or files to and from storage accounts, including uploading, downloading, copying, and synchronising files.
+
+**Azure Storage Explorer**
+Azure Storage Explorer is a standalone app for managing files and blobs in Azure Storage Accounts on Windows, macOS, and Linux.
+
+**Azure File Sync**
+Azure File Sync centralises file shares in Azure Files, maintaining Windows file server flexibility and performance. It enables bi-directional sync between local servers and Azure.
+
+-----
