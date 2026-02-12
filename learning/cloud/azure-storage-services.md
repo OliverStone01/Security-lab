@@ -141,3 +141,23 @@ Azure Table Storage is a NoSQL datastore for structured, non-relational data, id
 
 -----
 
+#### Azure migration options
+Azure supports both real time migration of infrastructure, applications, and data using **Azure Migrate** as well as asynchronous migration of data using Azure Data Box.
+
+##### Azure migrate
+Azure Migrate is a service that helps you migrate from an on premises environment to the cloud.
+
+#### Integrated tools
+In addition to working with tools from ISVs, the Azure Migrate hub also includes:
+
+- **Azure Migrate: Discovery and assessment** Discover and assess on premises servers running on VMware, Hyper-V, and physical servers in preparations to migrate.
+
+- **Azure Migrate: Server Migration**
+- **Data Migration assistant** assess SQL servers and helps pinpoint potential problems blocking migration.
+
+- **Azure Database Migration Service**
+- **Azure App Service migration assistant**
+- **Azure Data box** is used to move large amounts of offline data to Azure.
+
+
+#### Azure Data Box
