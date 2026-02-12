@@ -161,3 +161,22 @@ In addition to working with tools from ISVs, the Azure Migrate hub also includes
 
 
 #### Azure Data Box
+Azure Data Box is a physical migration service that securely transfers large amounts of data using a proprietary storage device with a maximum capacity of 80 terabytes.
+
+Order the Data Box device from the Azure portal to import or export data. After transferring data, return the device for automatic upload (for data going into Azure).
+
+Some use cases of importing include:
+- Onetime migration
+- Moving a media library from offline tapes into Azure.
+- Migrate your VM farm, SQL server, and application to Azure.
+- Initial bulk transfer
+- Periodic uploads
+
+Some use cases of exporting include:
+- Disaster recovery
+- Security requirements
+- Migrate back to on premises or to another cloud service provider.
+
+Data is securely erased from import and export devices according to NIST 800-88r1 standards.
+
+
