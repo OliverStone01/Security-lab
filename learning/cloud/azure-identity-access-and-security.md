@@ -35,3 +35,12 @@ Managed domains synchronise from Microsoft Entra ID, but not back. Microsoft Ent
 Azure applications, services, and VMs can utilise Microsoft Entra Domain Services features like domain join, group policy, LDAP, and Kerberos/NTLM authentication.Azure applications, services, and VMs can utilise Microsoft Entra Domain Services features like domain join, group policy, LDAP, and Kerberos/NTLM authentication.
 
 -----
+
+#### Azure conditional access
+Conditional access is a tool that Microsoft Entra ID uses to allow or deny access to resources based on identity signals including who the user is, where the user is, and what device the user is using.
+
+-----
+
+#### Microsoft defender for the cloud
+Defender for Cloud monitors cloud, on-premises, hybrid, and multicloud environments for security posture management and threat protection.
+
