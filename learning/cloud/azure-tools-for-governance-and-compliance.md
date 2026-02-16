@@ -22,3 +22,9 @@ This helps your organisation:
 #### Unified data governance
 Microsoft Purview offers unified data governance solutions for managing on-premises, multicloud, and SaaS data, including Azure, SQL, Hive, and Amazon S3.
 
+Microsoft Purview’s unified data governance helps your organisation:
+- Create an up to date map of your entire data estate that includes data classification and end to end lineage.
+- Identify where sensitive data is stored in your estate.
+- Generate insights about how your data is stored and used.
+- Manage access to the data in your estate securely abd at scale.
+
