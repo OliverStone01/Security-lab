@@ -12,3 +12,13 @@ Microsoft Purview does the following to keep your data landscape up to date:
 Microsoft Purview consists of risk and compliance and unified data governance.
 
 #### Microsoft purview risk and compliance solutions
+Microsoft Purview, utilising Microsoft 365 services like Teams, OneDrive, and Exchange, helps organisations manage and monitor data.
+
+This helps your organisation:
+- Protect sensitive data across clouds, apps, and devices.
+- Identify data risk and manage regulatory compliance requirements.
+- Get started with regulatory compliance.
+
+#### Unified data governance
+Microsoft Purview offers unified data governance solutions for managing on-premises, multicloud, and SaaS data, including Azure, SQL, Hive, and Amazon S3.
+
